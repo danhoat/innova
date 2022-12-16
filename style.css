@@ -1,0 +1,378 @@
+/*
+Theme Name: Innova
+Theme URI: https://www.avadantathemes.com/product/avadanta-free-multipurpose-business-wordpress-theme
+Author: avadantathemes
+Author URI: https://www.avadantathemes.com
+Description: Innova is a creative, fully customizable and multipurpose theme that you can use to create any kind of beautiful websites. Avadanta is a responsive free business corporate wordpress. pre-made designed Homepage with 7 inner sections Featured Slider, services, about sections, teams, testimonials, portfolio, call to action, Hero Content, you can easily customize them. You can change everything like Unlimited color options, typography fonts, size etc. You can choose your own layout for your page with sidebar or without sidebar or full page content.You can customize navigation bar as you want like background color and menu color with sticky menu option.HIde show post meta and title for post.Unlimited icons option for services. Avadanta is a translation ready theme. Support any type widget on footer and sidebar. You can change the footer widget column layout. Avadanta Pixel perfect and high defination all media screen sizes. Avadanta Theme woocommerce plugin supports you to create an online store with this theme. SEO Friendly and fast loading wordpress theme.Compatible with gutenberg, elementor page builder and so many popular plugins nicely works with avadanta theme. For more theme information, check out Theme demo here at https://www.avadantathemes.com/demo/avadanta-free/ and theme instructions here at https://www.avadantathemes.com/documentation/avadanta-free-theme/
+Version: 1.1.4
+Requires at least: 5.0
+Tested up to: 5.9
+Requires PHP: 5.6
+Tags: one-column, two-columns, left-sidebar, right-sidebar, custom-colors, custom-header, custom-menu, custom-logo, featured-images, theme-options, threaded-comments, translation-ready, footer-widgets, blog, news
+License: GNU General Public License v2 or later
+License URI: http://www.opensource.org/licenses/gpl-license.php GPL v3.0 (or later)
+Text Domain: avadanta
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+html,
+body {
+    color: #131313;
+    font-size: 16px;
+    line-height: 1.6;
+    font-family: "Mulish", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    position: relative;
+    overflow-x: hidden;
+    min-width: 320px;
+}
+
+@media (min-width: 576px) {
+    html,
+    body {
+        font-size: 16px;
+        line-height: 1.6;
+        font-weight: 400;
+    }
+}
+
+.khungAnh {
+    position: relative;
+    z-index: 1;
+}
+.welcome {
+    padding-top: 40px;
+    padding-bottom: 155px;
+    display: block;
+    clear: both;
+}
+.welcome .inner {
+    padding-top: 90px;
+    width: 1070px;
+    max-width: 100%;
+    margin: auto;
+    padding-bottom: 40px;
+}
+.inner .item .img {
+    overflow: hidden;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+.inner .item {
+    width: 24%;
+    float: left;
+    position: relative;
+    padding: 5px;
+    list-style: none;
+    height: 258px;
+}
+
+.inner .item .img .khungAnh .khungAnhCrop {
+    -webkit-transition: all 0.5s ease-in;
+    transition: all 0.5s ease-in;
+}
+.khungAnhCrop, .khungAnhCrop0 {
+    overflow: hidden;
+    text-align: center;
+    display: inline-block;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.inner .item .img .khungAnh::before {
+    padding-bottom: 100%;
+}
+.khungAnh:before {
+    content: "";
+    display: block;
+    padding-bottom: 57.3%;
+}
+
+.khungAnhCrop, .khungAnhCrop0 {
+    overflow: hidden;
+    text-align: center;
+    display: inline-block;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.inner .item .img .khungAnh .khungAnhCrop {
+    -webkit-transition: all 0.5s ease-in;
+    transition: all 0.5s ease-in;
+}
+
+.khungAnhCrop img {
+    max-width: 150%;
+    max-height: 150%;
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+.khungAnhCrop img.wide {
+    height: 100%;
+    max-width: none;
+}
+.khungAnhCrop img {
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+ .inner .item:hover .img .khungAnh .khungAnhCrop:hover {
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+}
+.inner .item h3 {
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translateY(-50%) translateX(-50%);
+    transform: translateY(-50%) translateX(-50%);
+    z-index: 2;
+    padding: 0 10px;
+    width: 125%;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-family: "UTMAvoBold";
+    margin: 0;
+    font-size: 20px;
+    font-weight: 500;
+}
+.inner .item h3 a {
+    color: #fff;
+}
+ .inner .item .img .khungAnh::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: rgba(32, 94, 171, 0.5);
+    z-index: 2;
+    pointer-events: none;
+    -webkit-transition: all 0.5s ease-in;
+    transition: all 0.5s ease-in;
+}
+ .inner .item:nth-child(2n+2) {
+    -webkit-transform: translateY(-105px);
+    transform: translateY(-105px);
+}
+.khungAnh {
+    position: relative;
+    z-index: 1;
+}
+.inner .item .img .khungAnh {
+    overflow: hidden;
+    -webkit-transform: rotate(45deg) scale(1.43);
+     transform: rotate(45deg) scale(1.43);
+    -webkit-transition: all 0.5s ease-in;
+    transition: all 0.5s ease-in;
+}
+.project-highlights {
+    position: relative;
+    background-image: url(images/1.png);
+    background-attachment: fixed;
+    background-size: 100% auto;
+    padding-top: 40px;
+    padding-bottom: 30px;
+}
+.project-highlights::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(255, 255, 255, 0.8);
+}
+.project-highlights .container{
+    position: relative;
+    z-index: 11;
+}
+.top-section-1 h2 {
+    font-family: "UTMAvo";
+    text-transform: uppercase;
+    color: #be1515;
+    font-size: 34px;
+    margin-bottom: 20px;
+    color: #205eab;
+}
+.top-section-1 h2::after, .top-section-1 h2::before {
+    content: "";
+    height: 9px;
+    width: 153px;
+    background: url(images/2.png) no-repeat center;
+    display: inline-block;
+    margin-right: 15px;
+    -webkit-transform: translateY(-7px);
+    transform: translateY(-7px);
+}
+.top-section-1 h2 a {
+    color: #205eab;
+    display: inline-block;
+}
+
+.top-section-1 h2::after, .top-section-1 h2::before {
+    content: "";
+    height: 9px;
+    width: 153px;
+    background: url(images/2.png) no-repeat center;
+    display: inline-block;
+    margin-right: 15px;
+    -webkit-transform: translateY(-7px);
+    transform: translateY(-7px);
+}
+.top-section-1 h2::after {
+    background: url(images/3.png) no-repeat center;
+    margin-right: 0;
+    margin-left: 15px;
+}
+.accordion .header {
+    text-align: center;
+    padding-bottom: 30px;
+}
+.accordion .header a {
+    text-transform: uppercase;
+    color: #999;
+    padding: 0 20px;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.card {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: 0.25rem;
+}
+.accordion .card {
+    border-radius: unset;
+    border: unset;
+    background-color: unset;
+}
+.collapse {
+    display: none;
+}
+.collapse.show {
+    display: block;
+}
+
+
+.accordion .collapse {
+    display: block;
+    height: 0;
+    opacity: 0;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+}
+.accordion .collapse.show {
+    height: auto;
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+.slick-slider {
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    -ms-touch-action: pan-y;
+    touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+}
+.slick-list {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+.accordion .card-body {
+    margin-left: -15px;
+    margin-right: -15px;
+    padding: 0;
+}
+.slick-slide {
+    display: none;
+    float: left;
+    height: 100%;
+    min-height: 1px;
+}
+.slick-initialized .slick-slide {
+    display: block;
+}
+.item-01 {
+    margin-bottom: 30px;
+    position: relative;
+}
+.accordion .item-01 {
+    overflow: hidden;
+    padding-left: 15px;
+    padding-right: 15px;
+    float: left;
+}
+
+.accordion .item-01:nth-child(4n+1) {
+    width: 50%;
+    height: 390px;
+}
+.accordion .item-01 {
+    overflow: hidden;
+    padding-left: 15px;
+    padding-right: 15px;
+    float: left;
+}
+.accordion .item-01:nth-child(4n+2), .accordion .item-01:nth-child(4n+3) {
+    width: 25%;
+    height: 180px;
+}
+.item-01 .khungAnh {
+    overflow: hidden;
+}
+.item-01 .khungAnh::before {
+    padding-bottom: 70%;
+}
+.khungAnhCrop img.tall {
+    width: 100%;
+    max-height: none;
+}
+.item-01 .khungAnh {
+    overflow: hidden;
+}
+.accordion .item-01:nth-child(4n+4) {
+    width: 50%;
+    height: 180px;
+    float: right;
+}
+.btn-xtc {
+    text-align: right;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+.project-highlights .btn-xtc {
+    margin-top: 10px;
+}
