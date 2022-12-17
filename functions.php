@@ -12,3 +12,4 @@ if( ! defined( 'ABSPATH' ) )
 {
 	exit;
 }
+define('INNOVA_URL', get_template_directory_uri() );

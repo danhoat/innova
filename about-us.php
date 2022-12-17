@@ -22,7 +22,7 @@
                 <div class="img">
                     <div class="khungAnh">
                         <span class="khungAnhCrop">
-                           <img alt="Dự án đầu tư" src="http://mhdi10.vn/pic/banner/0-02-06-0_636493021994303380.jpg" class="wide">
+                           <img alt="Dự án đầu tư" src="<?php echo INNOVA_URL;?>/images/aboutus1.jpg" class="wide">
                         </span>
                     </div>
                 </div>
@@ -35,7 +35,7 @@
                 <div class="img">
                     <div class="khungAnh">
                         <span class="khungAnhCrop">
-                           <img alt="Dự án đầu tư" src="http://mhdi10.vn/pic/banner/0-02-06-0_636493021994303380.jpg" class="wide"><img alt=" Thi công xây lắp" src="http://mhdi10.vn/pic/banner/0-02-06-9_636493021901818090.jpg" class="wide">
+                           <img alt="Dự án đầu tư" src="<?php echo INNOVA_URL;?>/images/project2.jpg" class="wide"><img alt=" Thi công xây lắp" src="<?php echo INNOVA_URL;?>/images/project2.jpg" class="wide">
                         </span>
                     </div>
                 </div>
@@ -48,7 +48,7 @@
                 <div class="img">
                     <div class="khungAnh">
                         <span class="khungAnhCrop">
-                           <img alt="Dự án đầu tư" src="http://mhdi10.vn/pic/banner/0-02-06-0_636493021994303380.jpg" class="wide"><img alt=" Thi công xây lắp" src="http://mhdi10.vn/pic/banner/0-02-06-9_636493021901818090.jpg" class="wide"><img alt=" Kinh doanh, thương mại" src="http://mhdi10.vn/pic/banner/0-02-06-9_636493021816403205.jpg" class="wide">
+                           <img alt="Dự án đầu tư"  class="wide"><img alt=" Thi công xây lắp" src="<?php echo INNOVA_URL;?>/images/project2.jpg" class="wide"><img alt=" Kinh doanh, thương mại" src="<?php echo INNOVA_URL;?>/images/project2.jpg" class="wide">
                         </span>
                     </div>
                 </div>
@@ -61,7 +61,7 @@
                 <div class="img">
                     <div class="khungAnh">
                         <span class="khungAnhCrop">
-                           <img alt="Dự án đầu tư" src="http://mhdi10.vn/pic/banner/0-02-06-0_636493021994303380.jpg" class="wide"><img alt=" Thi công xây lắp" src="http://mhdi10.vn/pic/banner/0-02-06-9_636493021901818090.jpg" class="wide"><img alt=" Kinh doanh, thương mại" src="http://mhdi10.vn/pic/banner/0-02-06-9_636493021816403205.jpg" class="wide"><img alt=" Tư vấn khảo sát thiết kế" src="http://mhdi10.vn/pic/banner/0-02-06-a_636493021706836938.jpg" class="wide">
+                           <img alt="Dự án đầu tư" src="<?php echo INNOVA_URL;?>/images/project2.jpg" class="wide">
                         </span>
                     </div>
                 </div>

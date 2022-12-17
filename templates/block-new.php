@@ -10,7 +10,7 @@
 
         <?php
 
-        $img = "https://st2.depositphotos.com/2963315/9499/i/950/depositphotos_94995442-stock-photo-architectural-composition-made-of-corporative.jpg";
+        $img = INNOVA_URL."/images/project2.jpg";
         ?>
         <div id="newcarouSel" class="carousel carousel-dark slide newcarouSel" data-bs-ride="carousel">
 
