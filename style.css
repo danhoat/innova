@@ -376,3 +376,10 @@ body {
 .project-highlights .btn-xtc {
     margin-top: 10px;
 }
+
+.carousel-item  .col{
+    position: relative;
+}
+.newcarouSel .carousel-caption{
+    position: relative;
+}
