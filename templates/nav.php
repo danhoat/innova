@@ -4,14 +4,13 @@ $style = "default";
 $style = 1;
 if($style){
 ?>
-
     <nav class="navbar navbar-expand-lg bg-light">
       <div class="container"> <!-- container-fluid == full !-->
 
          <a class="navbar-brand" href="#">
-      <img src="https://getbootstrap.com/docs/5.2/assets/brand/bootstrap-logo.svg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
-      Bootstrap
-    </a>
+          <img src="<?php echo INNOVA_IMG_URL;?>logo.png" alt="Logo" width="190" height="54" class="d-inline-block align-text-top">
+
+        </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
 
