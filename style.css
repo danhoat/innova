@@ -444,3 +444,10 @@ main{
 .breadcrumb-item.active{
     color: #fff;
 }
+.archive  h2{
+    font-size: 23px;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}

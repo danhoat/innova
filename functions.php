@@ -40,6 +40,7 @@ Class Inova_Theme{
     function theme_support(){
         add_theme_support('widgets');
         add_theme_support( 'title-tag' );
+        add_theme_support('post-thumbnails');
         add_theme_support( 'custom-logo', array(
             'height' => 480,
             'width'  => 720,
@@ -55,11 +56,11 @@ Class Inova_Theme{
             'parent_item_colon'   => __( 'Parent Movie', 'twentythirteen' ),
             'all_items'           => __( 'Tất Cả Dự Án', 'twentythirteen' ),
             'view_item'           => __( 'View Dự Án', 'twentythirteen' ),
-            'add_new_item'        => __( 'Add New Movie', 'twentythirteen' ),
+            'add_new_item'        => __( 'Add New Dự Án', 'twentythirteen' ),
             'add_new'             => __( 'Add New', 'twentythirteen' ),
-            'edit_item'           => __( 'Edit Movie', 'twentythirteen' ),
-            'update_item'         => __( 'Update Movie', 'twentythirteen' ),
-            'search_items'        => __( 'Search Movie', 'twentythirteen' ),
+            'edit_item'           => __( 'Sửa Dự Án', 'twentythirteen' ),
+            'update_item'         => __( 'Update Dự Án', 'twentythirteen' ),
+            'search_items'        => __( 'Search Dự Án', 'twentythirteen' ),
             'not_found'           => __( 'Not Found', 'twentythirteen' ),
             'not_found_in_trash'  => __( 'Not found in Trash', 'twentythirteen' ),
         );
@@ -68,7 +69,7 @@ Class Inova_Theme{
 
         $args = array(
             'label'               => __( 'Dự Án', 'twentythirteen' ),
-            'description'         => __( 'Movie news and reviews', 'twentythirteen' ),
+            'description'         => __( 'Dự Án news and reviews', 'twentythirteen' ),
             'labels'              => $labels,
             'supports'            => array( 'title', 'editor', 'excerpt', 'author', 'thumbnail', 'comments', 'revisions', 'custom-fields', ),
             'hierarchical'        => 'du-an',
@@ -85,39 +86,37 @@ Class Inova_Theme{
             //'capability_type'     => 'page',
             'show_in_rest'        => true,
 
-            // This is where we add taxonomies to our CPT
-            //'taxonomies'          => array( 'category' ),
         );
 
     // Registering your Custom Post Type
     register_post_type( 'du-an', $args );
 
     $labels = array(
-    'name' => _x( 'Danh Mục', 'taxonomy general name' ),
-    'singular_name' => _x( 'Danh Mục', 'taxonomy singular name' ),
-    'search_items' =>  __( 'Danh Mục' ),
-    'all_items' => __( 'All Danh Mục' ),
-    'parent_item' => __( 'Parent Subject' ),
-    'parent_item_colon' => __( 'Parent Subject:' ),
-    'edit_item' => __( 'Edit Subject' ),
-    'update_item' => __( 'Update Subject' ),
-    'add_new_item' => __( 'Add New Subject' ),
-    'new_item_name' => __( 'New Subject Name' ),
-    'menu_name' => __( 'Danh Mục' ),
-  );
+        'name' => _x( 'Danh Mục', 'taxonomy general name' ),
+        'singular_name' => _x( 'Danh Mục', 'taxonomy singular name' ),
+        'search_items' =>  __( 'Danh Mục' ),
+        'all_items' => __( 'All Danh Mục' ),
+        'parent_item' => __( 'Parent Subject' ),
+        'parent_item_colon' => __( 'Parent Subject:' ),
+        'edit_item' => __( 'Edit Subject' ),
+        'update_item' => __( 'Update Subject' ),
+        'add_new_item' => __( 'Add New Subject' ),
+        'new_item_name' => __( 'New Subject Name' ),
+        'menu_name' => __( 'Danh Mục' ),
+    );
 
 // Now register the taxonomy
-  register_taxonomy('danh-muc',array('du-an'), array(
-    'hierarchical' => true,
-    'labels' => $labels,
-    'show_ui' => true,
-    'show_in_rest' => true,
-    'show_admin_column' => true,
-    'query_var' => true,
-    'rewrite' => array( 'slug' => 'danh-muc' ),
-  ));
+    register_taxonomy('danh-muc',array('du-an'), array(
+        'hierarchical' => true,
+        'labels' => $labels,
+        'show_ui' => true,
+        'show_in_rest' => true,
+        'show_admin_column' => true,
+        'query_var' => true,
+        'rewrite' => array( 'slug' => 'danh-muc' ),
+        ));
 
-}
+    }
 
 }
 
