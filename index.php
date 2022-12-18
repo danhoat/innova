@@ -20,7 +20,7 @@
 
             the_content();
         }
-}
+    }
     ?>
   </main>
 

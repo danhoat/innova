@@ -1,4 +1,3 @@
-
 <!doctype html>
 <html lang="en">
   <head>
@@ -8,7 +7,7 @@
     <meta name="author" content="">
     <link rel="icon" href="/docs/4.0/assets/img/favicons/favicon.ico">
 
-    <title>Công Ty Bac Nam Trung</title>
+    <title><?php wp_title(); ?></title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/carousel/">
 
@@ -29,7 +28,7 @@
     <link href="<?php echo get_stylesheet_uri();?>" rel="stylesheet">
     <?php wp_head();?>
   </head>
-  <body>
+  <body class="<?php body_class();?>">
 
     <header>
 
