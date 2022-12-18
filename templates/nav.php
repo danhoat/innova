@@ -3,9 +3,19 @@
 $style = "default";
 $style = 1;
 if($style){
+  $args =       array(
+      'theme_location'  => is_user_logged_in() ? 'logged-in-menu' : 'logged-out-menu',
+      'container_class' => 'collapse navbar-collapse container_class',
+      'container_id'    => 'navbarSupportedContent container_id',
+      'menu_class' =>   'collapse navbar-collapse menu_class',
+      'menu_id'              => 'navbarSupportedContent',
+     // 'items_wrap'           => '<ul id="%1$s" class="navbar-nav me-auto mb-2 mb-lg-0">%3$s</ul>',
+  ) ;
+
 ?>
     <nav class="navbar navbar-expand-lg bg-light">
       <div class="container"> <!-- container-fluid == full !-->
+
 
          <a class="navbar-brand" href="#">
           <img src="<?php echo INNOVA_IMG_URL;?>logo.png" alt="Logo" width="190" height="54" class="d-inline-block align-text-top">
@@ -16,6 +26,7 @@ if($style){
 
 
         </button>
+         <?php  wp_nav_menu($args );?>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
