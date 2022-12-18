@@ -21,7 +21,7 @@ require_once(INNOVE_DIR.'/html.php');
 
 Class Inova_Theme{
     function __construction(){
-        add_action( 'after_setup_theme', array($this, 'init', 0 );
+        add_action( 'after_setup_theme', array($this, 'init') );
     }
     function init(){
 
@@ -34,4 +34,4 @@ Class Inova_Theme{
 }
 
 
-$GLOBALS['innove'] = Inova_Theme();
+$GLOBALS['innove'] = new Inova_Theme();
