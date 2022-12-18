@@ -161,6 +161,7 @@ main{
 }
 .inner .item h3 a {
     color: #fff;
+    text-decoration: none;
 }
  .inner .item .img .khungAnh::after {
     content: "";
