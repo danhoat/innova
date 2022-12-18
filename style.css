@@ -532,6 +532,6 @@ li:hover .sub-menu{
     position: absolute;
 }
 .sub-menu li{
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid #eaeaeacc;
     padding-left: 10px;
 }
