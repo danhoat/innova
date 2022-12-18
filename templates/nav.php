@@ -20,7 +20,7 @@ if($style){
       <div class="container"> <!-- container-fluid == full !-->
 
 
-         <a class="navbar-brand" href="#">
+         <a class="navbar-brand" href="<?php echo home_url();?>">
           <img src="<?php echo INNOVA_IMG_URL;?>logo.png" alt="Logo" width="190" height="54" class="d-inline-block align-text-top">
 
         </a>

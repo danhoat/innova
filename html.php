@@ -2,6 +2,7 @@
 
 function a_new_col(){
   $img = 'https://dulichhoangnguyen.com/upload/images/mua%20xuan%20NZ.jpg';
+
   ?>
 
 <div class="col"><img src="<?php echo $img;?>" class="d-block w-100" height="330" alt="...">
@@ -14,13 +15,19 @@ function a_new_col(){
   </div>
   <?php }
 
-  function a_tab_project($id = "collapse1-ph", $show = ""){?>
+  function a_tab_project($id = "collapse1-ph", $show = ""){
+    $img = 'https://dulichhoangnguyen.com/upload/images/mua%20xuan%20NZ.jpg';
+     $img1 = "https://static1.cafeland.vn/cafelandnew/hinh-anh/2022/12/17/186/image-20221217104751-1.jpeg";
+     $img2 = "https://anvietland.vn/wp-content/uploads/2021/05/202010-helios-quy-hoach-phan-khu-1024x593.jpg";
+     $img3 = "https://img.dothi.net/2021/12/17/Z9BcC3fq/du-an-khu-do-thi-77c8.jpg";
+     $img = INNOVA_IMG_URL.'/HasThumb.jpg';
+     ?>
    <div id="<?php echo $id;?>" class="collapse <?php echo $show;?> " role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion-ph">
     <div class="card-body slick-initialized slick-slider"><div aria-live="polite" class="slick-list draggable"><div class="slick-track" role="listbox" style="opacity: 1; width: 1200px; transform: translate3d(0px, 0px, 0px);"><div class="inner slick-slide slick-current slick-active" data-slick-index="0" aria-hidden="false" tabindex="-1" role="option" aria-describedby="slick-slide40" style="width: 1200px;">
                 <article class="item-01">
                     <div class="khungAnh">
                          <a class="khungAnhCrop" href="http://mhdi10.vn/du-an-khu-nha-o-gia-dinh-quan-doi-tai-khu-dtm-nam-ho-linh-dam.htm" tabindex="0">
-            <img alt="Dự án Khu nhà ở gia đình quân đội tại khu ĐTM Nam hồ Linh Đàm" class="tall" src="http://mhdi10.vn/pic/Customer/_636519470386678505_HasThumb.jpg">
+                            <img alt="Dự án Khu nhà ở gia đình quân đội tại khu ĐTM Nam hồ Linh Đàm" class="tall" src="<?php echo $img; ?>">
                         </a>
                     </div>
                     <h3>
@@ -30,7 +37,7 @@ function a_new_col(){
                 <article class="item-01">
                     <div class="khungAnh">
                          <a class="khungAnhCrop" href="http://mhdi10.vn/du-an-cai-tao-khu-tap-the-quan-doi-bac-nghia-tan-ha-noi.htm" tabindex="0">
-                     <img alt="Dự án cải tạo khu tập thể quân đội Bắc Nghĩa Tân, Hà Nội" class="wide" src="http://mhdi10.vn/pic/Customer/downloa_636520361878066352_HasThumb_Thumb.jpg">
+                     <img alt="Dự án cải tạo khu tập thể quân đội Bắc Nghĩa Tân, Hà Nội" class="wide" src="<?php echo $img;?>">
                         </a>
                     </div>
                     <h3>
