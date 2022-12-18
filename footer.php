@@ -98,7 +98,7 @@
 
             <div class="col-12 col-lg-6 right">
 
-<strong class="header-f">CÔNG TY CỔ PHẦN ĐẦU TƯ XÂY DỰNG VÀ THƯƠNG MẠI Bắc Trung Nam</strong>
+<strong class="header-f">CÔNG TY CỔ PHẦN ĐẦU TƯ XÂY DỰNG VÀ THƯƠNG MẠI BẮC TRUNG NAM</strong>
 <div class="contact-f">
     <p>
         <img src="pic/icons/f1.png" alt="">
