@@ -505,3 +505,7 @@ footer{
     display: grid;
     grid-template-columns:  1fr 1fr 1fr;
 }
+.carousel-item img{
+    max-width: 100%;
+    height: auto;
+}

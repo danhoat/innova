@@ -1,4 +1,32 @@
- <!-- START THE FEATURETTES -->
+<?php
+
+$args =  array('post_type' => 'post','post_status' => 'publish');
+$query = new WP_Query($args);
+$html = '';
+if($query->have_posts() ){
+    $i = 0;
+    $html ='<div class="carousel-item active"> <div class="row">';
+    while($query->have_posts() ){
+
+        $query->the_post();
+
+
+        if( $i %3 == 0 && $i >0)
+           $html.='<div class="carousel-item "> <div class="row">';
+
+        $html .='<div class="col-4"><a href="'.get_permalink().'">'.get_innova_post_thumbnail().'</a>';
+        $html.='<div class="item-caption d-none d-md-block">';
+        $html.='<h5><a href="'.get_permalink().'">'.get_the_title().'</a></h5>';
+        $html.='<p>'.get_the_excerpt().'</p>';
+        $html.='</div></div>';
+
+
+        if( $i %3 == 2 || $i == $query->found_posts )
+            $html.='</div></div>';
+        $i++;
+    }
+}
+?>
 <section >
   <div class="container">
         <div class="text-center top-section-1">
@@ -7,39 +35,21 @@
             </h2>
         </div>
          <hr class="featurette-divider">
-
-        <?php
-
-        $img = INNOVA_URL."/images/project2.jpg";
-        ?>
         <div id="newcarouSel" class="carousel carousel-dark slide newcarouSel" data-bs-ride="carousel">
 
           <div class="carousel-inner">
-                <div class="carousel-item active" data-bs-interval="10000">
-                    <div class="row">
-                      <?php a_new_col();?>
-                      <?php a_new_col();?>
-                     <?php  a_new_col();?>
-                   </div>
-                </div>
-                <div class="carousel-item " data-bs-interval="10000">
-                     <div class="row">
-                      <?php a_new_col();?>
-                      <?php a_new_col();?>
-                     <?php  a_new_col();?>
-                   </div>
-                </div>
-
-
+             <?php echo $html;?>
           </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#newcarouSel" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#newcarouSel" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
+          <?php if($query->found_posts > 3) {?>
+              <button class="carousel-control-prev" type="button" data-bs-target="#newcarouSel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#newcarouSel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+          <?php } ?>
         </div>
         <script type="text/javascript">
             // (function($){

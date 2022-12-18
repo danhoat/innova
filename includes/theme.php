@@ -8,3 +8,6 @@ function innova_post_thumbnail(){
 	}
 
 }
+function get_innova_post_thumbnail(){
+	return has_post_thumbnail() ? get_the_post_thumbnail() : '<img src="'.INNOVA_IMG_URL.'/thumbnail.jpg">';
+}
