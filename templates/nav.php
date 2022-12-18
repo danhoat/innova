@@ -31,7 +31,8 @@ if($style){
         </button>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <!--     <?php  wp_nav_menu($args );?>
+           <?php  wp_nav_menu($args );?>
+           <!--
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="#">Home</a>
