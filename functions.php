@@ -20,16 +20,29 @@ define('INNOVE_DIR', get_template_directory());
 require_once(INNOVE_DIR.'/html.php');
 
 Class Inova_Theme{
-    function __construction(){
-        add_action( 'after_setup_theme', array($this, 'init') );
+    function __construct(){
+        add_action( 'after_setup_theme', array($this, 'innove_setup_theme') );
+        add_action('init', array($this, 'init_theme') );
+          $this->theme_support();
     }
-    function init(){
+    function init_theme(){
+        $this->theme_support();
+    }
+    function innove_setup_theme(){
 
         register_nav_menus( array(
-            'primary_menu' => __( 'Primary Menu', 'text_domain' ),
+            'header_menu' => __( 'Header Menu', 'text_domain' ),
             'footer_menu'  => __( 'Footer Menu', 'text_domain' ),
         ) );
 
+    }
+    function theme_support(){
+        add_theme_support('widgets');
+        add_theme_support( 'title-tag' );
+        add_theme_support( 'custom-logo', array(
+            'height' => 480,
+            'width'  => 720,
+        ) );
     }
 }
 

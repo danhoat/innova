@@ -4,10 +4,13 @@ $style = "default";
 $style = 1;
 if($style){
   $args =       array(
-      'theme_location'  => is_user_logged_in() ? 'logged-in-menu' : 'logged-out-menu',
+      'theme_location'  => 'header_menu',
       'container_class' => 'collapse navbar-collapse container_class',
       'container_id'    => 'navbarSupportedContent container_id',
-      'menu_class' =>   'collapse navbar-collapse menu_class',
+      //'container' =>  false,
+      'container' => 'ul',
+      //'menu_class' =>   'collapse navbar-collapse menu_class',
+       'menu_class'=>'navbar-nav me-auto mb-2 mb-lg-0',
       'menu_id'              => 'navbarSupportedContent',
      // 'items_wrap'           => '<ul id="%1$s" class="navbar-nav me-auto mb-2 mb-lg-0">%3$s</ul>',
   ) ;
@@ -26,8 +29,9 @@ if($style){
 
 
         </button>
-         <?php  wp_nav_menu($args );?>
+
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <!--     <?php  wp_nav_menu($args );?>
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="#">Home</a>
@@ -49,7 +53,7 @@ if($style){
             <li class="nav-item">
               <a class="nav-link disabled">Disabled</a>
             </li>
-          </ul>
+          </ul> -->
           <form class="d-flex" role="search">
             <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
             <button class="btn btn-outline-success" type="submit">Search</button>
