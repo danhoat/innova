@@ -453,15 +453,18 @@ main{
 article{
     padding: 10px;
 }
-img{
-    max-width: 100%;
-    height: auto;
-}
+
 .col-thumbnail img{
     border-radius: 5px;
+     max-width: 100%;
+    height: auto;
 }
 .archive a{
     text-decoration: none;
     font-size: 18px;
     color: #000;
+}
+footer{
+    background: #F9F9F9;
+    padding: 45px 30px;
 }
