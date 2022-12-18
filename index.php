@@ -11,7 +11,10 @@
 
     <?php  get_template_part('templates/block','new'); ?>
 
-    <?php the_content(); ?>
+    <?php
+    the_post();
+    the_content();
+    ?>
   </main>
 
 <?php get_footer(); ?>
