@@ -459,6 +459,9 @@ article{
      max-width: 100%;
     height: auto;
 }
+.archive article img{
+    margin-bottom: 20px;
+}
 .archive article  a{
     text-decoration: none;
     font-size: 18px;
