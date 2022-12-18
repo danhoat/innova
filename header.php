@@ -27,7 +27,7 @@
 
 
     <link href="<?php echo get_stylesheet_uri();?>" rel="stylesheet">
-
+    <?php wp_head();?>
   </head>
   <body>
 
