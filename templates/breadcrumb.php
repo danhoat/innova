@@ -1,13 +1,21 @@
 <?php
-$title= '';
+$title  = '';
+$sub1    = '111';
+
 if( is_tax() ){
     $title = single_term_title('', false);
-} else{
+} else {
     if( ! empty( single_post_title( '', false ) ) ){
         $title = single_post_title('', false );
-    } else if( is_singular() ){
-        the_post();
-        $title = get_the_title();
+    }
+    if( is_singular('du-an') ){
+
+        $tax    = get_the_terms($post,'danh-muc');
+        if( $tax && !is_wp_error($tax) ){
+            $tax = $tax[0];
+
+            $sub1 = '<a class="breadcrumb-item" href="'.get_term_link($tax).'"> '.$tax->name.'</a>';
+        }
     }
 
 }
@@ -22,8 +30,8 @@ if( is_tax() ){
             </header><!-- .page-header -->
 
             <nav class="breadcrumb">
-                    <a href="/" title="Trang chủ" class="breadcrumb-item">Trang chủ</a>
-                    <a class="breadcrumb-item active" href="http://mhdi10.vn/linh-vuc-kinh-doanh.htm" title="Lĩnh vực kinh doanh"><?php echo $title; ?></a>
+                    <a href="/" title="Trang chủ" class="breadcrumb-item">Trang chủ</a> <?php echo $sub1;?>
+                    <a class="breadcrumb-item active" href="#" title="Lĩnh vực kinh doanh"><?php echo $title; ?></a>
             </nav>
         </div>
     </div>
