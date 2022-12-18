@@ -509,3 +509,8 @@ footer{
     max-width: 100%;
     height: auto;
 }
+.carousel-item a{
+    color: #000;
+    text-decoration: none;
+    font-size: 18;
+}
