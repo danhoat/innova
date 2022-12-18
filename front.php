@@ -9,7 +9,7 @@
 <?php get_template_part('slider');?>
     <main role="main">
 
-    <?php  get_template_part('about-us'); ?>
+    <?php  get_template_part('templates/about','us'); ?>
     <?php  get_template_part('templates/project','highlight'); ?>
 
     <!-- Marketing messaging and featurettes
