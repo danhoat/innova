@@ -14,10 +14,6 @@
       <div class="container marketing">
 
 
-
-
-
-
         <hr class="featurette-divider">
 
         <div class="row featurette">

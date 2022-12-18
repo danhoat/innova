@@ -17,46 +17,16 @@
           <div class="carousel-inner">
                 <div class="carousel-item active" data-bs-interval="10000">
                     <div class="row">
-                        <div class="col"><img src="<?php echo $img;?>" class="d-block w-100" height="330" alt="...">
-                          <div class="item-caption d-none d-md-block">
-                            <h5>First slide label</h5>
-                            <p>Some representative placeholder content for the first slide.</p>
-                          </div>
-                      </div>
-                     <div class="col"><img src="<?php echo $img;?>" class="d-block w-100" height="330" alt="...">
-                          <div class="carousel-caption d-none d-md-block">
-                            <h5>Second slide label</h5>
-                            <p>Some representative placeholder content for the first slide.</p>
-                          </div>
-                      </div>
-                      <div class="col"><img src="<?php echo $img;?>" class="d-block w-100" height="330" alt="...">
-                          <div class="item-caption d-none d-md-block">
-                            <h5>Third slide label</h5>
-                            <p>Some representative placeholder content for the first slide.</p>
-                          </div>
-                      </div>
+                      <?php a_new_col();?>
+                      <?php a_new_col();?>
+                     <?php  a_new_col();?>
                    </div>
                 </div>
                 <div class="carousel-item " data-bs-interval="10000">
-                    <div class="row">
-                        <div class="col"><img src="<?php echo $img;?>" class="d-block w-100" height="330" alt="...">
-                          <div class="item-caption d-none ">
-                            <h5>First slide label</h5>
-                            <p>Some representative placeholder content for the first slide.</p>
-                          </div>
-                      </div>
-                     <div class="col"><img src="<?php echo $img;?>" class="d-block w-100" height="330" alt="...">
-                          <div class="item-caption d-none d-md-block">
-                            <h5>First slide label</h5>
-                            <p>Some representative placeholder content for the first slide.</p>
-                          </div>
-                      </div>
-                      <div class="col"><img src="<?php echo $img;?>" class="d-block w-100" height="330" alt="...">
-                          <div class="item-caption d-none d-md-block">
-                            <h5>First slide label</h5>
-                            <p>Some representative placeholder content for the first slide.</p>
-                          </div>
-                      </div>
+                     <div class="row">
+                      <?php a_new_col();?>
+                      <?php a_new_col();?>
+                     <?php  a_new_col();?>
                    </div>
                 </div>
 

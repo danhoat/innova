@@ -22,7 +22,7 @@
                 <div class="img">
                     <div class="khungAnh">
                         <span class="khungAnhCrop">
-                           <img alt="Dự án đầu tư" src="<?php echo INNOVA_URL;?>/images/aboutus1.jpg" class="wide">
+                           <img alt="Dự án đầu tư" src="https://media.vneconomy.vn/images/upload/2022/10/27/16-6boxaydungbaibonhieuthutuchanhchinh2021654.jpg" class="wide">
                         </span>
                     </div>
                 </div>

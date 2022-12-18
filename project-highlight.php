@@ -22,7 +22,7 @@
                 <article class="item-01">
                     <div class="khungAnh">
                          <a class="khungAnhCrop" href="#" tabindex="0">
-            <img alt="Dự án Khu nhà ở gia đình quân đội tại khu ĐTM Nam hồ Linh Đàm" class="tall" src="<?php echo get_template_directory_uri();?>/images/HasThumb.jpg">
+            <img alt="Dự án Khu nhà ở gia đình quân đội tại khu ĐTM Nam hồ Linh Đàm" class="tall" src="https://media.vneconomy.vn/images/upload/2022/10/27/16-6boxaydungbaibonhieuthutuchanhchinh2021654.jpg">
                         </a>
                     </div>
                     <h3>

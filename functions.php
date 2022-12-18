@@ -13,3 +13,7 @@ if( ! defined( 'ABSPATH' ) )
 	exit;
 }
 define('INNOVA_URL', get_template_directory_uri() );
+define('INNOVE_DIR', get_template_directory());
+
+
+require_once(INNOVE_DIR.'/html.php');
