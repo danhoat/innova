@@ -1,7 +1,7 @@
 <?php
 
-$categories = get_terms('category', array(
-    'post_type'     => array('du-an', 'product'),
+$categories = get_terms('danh-muc', array(
+    //'post_type'     => array('du-an', 'product'),
     'hide_empty'    => false,
     'fields'        => 'all',
     'exclude'       => 1,
