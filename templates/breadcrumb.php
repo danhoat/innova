@@ -1,6 +1,6 @@
 <?php
 $title  = '';
-$sub1    = '111';
+$sub1    = '';
 
 if( is_tax() ){
     $title = single_term_title('', false);

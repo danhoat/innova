@@ -16,7 +16,9 @@ function a_new_col(){
   <?php }
 
   function a_tab_project($id = "collapse1-ph", $show = ""){
-
+    $acti= '';
+    if($id == "collapse1-ph")
+        $acti = 'active';
 
     $args = array(
                         'post_type' => 'du-an',
@@ -33,24 +35,25 @@ function a_new_col(){
      ?>
    <div id="<?php echo $id;?>" class="collapse <?php echo $show;?> " role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion-ph">
         <div class="card-body slick-initialized slick-slider"><div aria-live="polite" class="slick-list draggable"><div class="slick-track" role="listbox" style="opacity: 1; width: 1200px; transform: translate3d(0px, 0px, 0px);">
-        <div class="inner slick-slide slick-current slick-active" data-slick-index="0" aria-hidden="false" tabindex="-1" role="option" aria-describedby="slick-slide40" style="width: 1200px;">
+        <div class="inner slick-slide slick-current slick-<?php echo $acti;?>" data-slick-index="0" aria-hidden="false" tabindex="-1" role="option" aria-describedby="slick-slide40" style="width: 1200px;">
 
             <?php
-
+            $i = 1;
             while($the_query->have_posts() ){
                 $the_query->the_post(); ?>
 
-                <article class="item-01">
-                    <div class="khungAnh">
-                         <a class="khungAnhCrop" href="<?php the_permalink();?>" tabindex="0">
-                           <?php innova_post_thumbnail();?>
-                        </a>
-                    </div>
+                <article class="grid-item grid-item-<?php echo $i;?>">
+
+                     <a class="" href="<?php the_permalink();?>" tabindex="0">
+                       <?php innova_post_thumbnail();?>
+                    </a>
+
                     <h3>
                           <a href="<?php the_permalink();?>" title="<?php the_title();?>" tabindex="0"><?php the_title();?></a>
                     </h3>
                 </article>
                 <?php
+                $i++;
             }
             ?>
 

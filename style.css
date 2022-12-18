@@ -320,6 +320,38 @@ main{
     touch-action: pan-y;
     -webkit-tap-highlight-color: transparent;
 }
+
+.slick-initialized .slick-slide {
+    display: grid;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.grid-item{
+    display: grid;
+    position: relative;
+}
+.grid-item-1{
+grid-row-start: 1; grid-row-end: 3;
+ grid-column-start:1;
+    grid-column-end: 3;
+}
+.slick-slide h3{
+    position: absolute;
+    bottom: 15px;
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+.slick-slide a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+.grid-item  img{
+    max-width: 100%;
+    height: auto;
+}
+
 .slick-list {
     position: relative;
     display: block;
@@ -338,9 +370,7 @@ main{
     height: 100%;
     min-height: 1px;
 }
-.slick-initialized .slick-slide {
-    display: block;
-}
+
 .item-01 {
     margin-bottom: 30px;
     position: relative;
