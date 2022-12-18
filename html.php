@@ -66,3 +66,26 @@ function a_new_col(){
                 </article> </div></div></div></div>
             </div>
 <?php }
+
+function du_an_html($term){
+    $img_url = "https://media.vneconomy.vn/images/upload/2022/10/27/16-6boxaydungbaibonhieuthutuchanhchinh2021654.jpg";
+     if( function_exists('z_taxonomy_image_url') ){
+        $img_url_cs=  z_taxonomy_image_url($term->term_id);
+        if( ! empty($img_url_cs) ) $img_url = $img_url_cs;
+    }
+
+    ?>
+    <li class="item">
+        <div class="img">
+            <div class="khungAnh">
+                <span class="khungAnhCrop">
+                   <img alt="<?php echo $term->name;?>" src="<?php echo $img_url;?>" class="wide">
+                </span>
+            </div>
+        </div>
+        <h3>
+            <a title="Dự án đầu tư" href="/du-an.htm"><?php echo $term->name;?></a>
+        </h3>
+    </li>
+    <?php
+}

@@ -1,3 +1,15 @@
+<?php
+
+$categories = get_terms('category', array(
+    'post_type'     => array('du-an', 'product'),
+    'hide_empty'    => false,
+    'fields'        => 'all',
+    'exclude'       => 1,
+));
+
+?>
+
+
 <div class="container welcome">
    <section class="welcome">
     <div class="text-center top-section-1">
@@ -17,59 +29,9 @@
     </div>
 
     <ul class="inner">
-
-         <li class="item">
-                <div class="img">
-                    <div class="khungAnh">
-                        <span class="khungAnhCrop">
-                           <img alt="Dự án đầu tư" src="https://media.vneconomy.vn/images/upload/2022/10/27/16-6boxaydungbaibonhieuthutuchanhchinh2021654.jpg" class="wide">
-                        </span>
-                    </div>
-                </div>
-                <h3>
-                    <a title="Dự án đầu tư" href="/du-an.htm">Dự án đầu tư</a>
-                </h3>
-        </li>
-
-         <li class="item">
-                <div class="img">
-                    <div class="khungAnh">
-                        <span class="khungAnhCrop">
-                           <img alt="Dự án đầu tư" src="<?php echo INNOVA_URL;?>/images/project2.jpg" class="wide"><img alt=" Thi công xây lắp" src="<?php echo INNOVA_URL;?>/images/project2.jpg" class="wide">
-                        </span>
-                    </div>
-                </div>
-                <h3>
-                    <a title=" Thi công xây lắp" href="/thi-cong-xay-lap-2.htm"> Thi công xây lắp</a>
-                </h3>
-            </li>
-
-         <li class="item">
-                <div class="img">
-                    <div class="khungAnh">
-                        <span class="khungAnhCrop">
-                           <img alt="Dự án đầu tư"  class="wide"><img alt=" Thi công xây lắp" src="<?php echo INNOVA_URL;?>/images/project2.jpg" class="wide"><img alt=" Kinh doanh, thương mại" src="<?php echo INNOVA_URL;?>/images/project2.jpg" class="wide">
-                        </span>
-                    </div>
-                </div>
-                <h3>
-                    <a title=" Kinh doanh, thương mại" href="/kinh-doanh-thuong-mai.htm"> Kinh doanh, thương mại</a>
-                </h3>
-            </li>
-
-         <li class="item">
-                <div class="img">
-                    <div class="khungAnh">
-                        <span class="khungAnhCrop">
-                           <img alt="Dự án đầu tư" src="<?php echo INNOVA_URL;?>/images/project2.jpg" class="wide">
-                        </span>
-                    </div>
-                </div>
-                <h3>
-                    <a title=" Tư vấn khảo sát thiết kế" href="/tu-van-khao-sat-thiet-ke.htm"> Tư vấn khảo sát thiết kế</a>
-                </h3>
-            </li>
-
+        <?php  foreach($categories as $term){ ?>
+        <?php du_an_html($term);?>
+        <?php } ?>
         </ul>
     </section>
 </div>

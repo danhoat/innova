@@ -10,7 +10,7 @@
     <main role="main">
 
     <?php  get_template_part('about-us'); ?>
-    <?php  get_template_part('project-highlight'); ?>
+    <?php  get_template_part('templates/project','highlight'); ?>
 
     <!-- Marketing messaging and featurettes
     ================================================== -->

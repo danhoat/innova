@@ -1,3 +1,4 @@
+
 <section class="project-highlights">
     <div class="container">
         <div class="text-center top-section-1">

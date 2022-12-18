@@ -71,7 +71,7 @@ Class Inova_Theme{
             'description'         => __( 'Movie news and reviews', 'twentythirteen' ),
             'labels'              => $labels,
             'supports'            => array( 'title', 'editor', 'excerpt', 'author', 'thumbnail', 'comments', 'revisions', 'custom-fields', ),
-            'hierarchical'        => false,
+            'hierarchical'        => 'du-an',
             'public'              => true,
             'show_ui'             => true,
             'show_in_menu'        => true,
