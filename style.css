@@ -32,24 +32,7 @@ body {
 main{
     min-height: 650px;
 }
-html,
-body {
-    color: #131313;
-    line-height: 1.6;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    position: relative;
-    overflow-x: hidden;
-    min-width: 320px;
-}
 
-@media (min-width: 576px) {
-    html,
-    body {
-        line-height: 1.6;
-        font-weight: 400;
-    }
-}
 .navbar-nav   li{
     list-style: none;
     padding: 10px;
