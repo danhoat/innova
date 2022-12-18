@@ -84,7 +84,7 @@ function du_an_html($term){
             </div>
         </div>
         <h3>
-            <a title="Dự án đầu tư" href="/du-an.htm"><?php echo $term->name;?></a>
+            <a title="Dự án đầu tư" href="<?php echo get_term_link($term);?>"><?php echo $term->name;?></a>
         </h3>
     </li>
     <?php

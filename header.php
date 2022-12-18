@@ -16,10 +16,9 @@
     <link href="<?php echo get_stylesheet_uri();?>?vers=<?php echo rand();?>" rel="stylesheet">
     <?php wp_head();?>
   </head>
-  <body class="<?php body_class();?>">
+  <body <?php body_class();?>>
 
     <header>
-
 
       <?php get_template_part('templates/nav'); ?>
 
