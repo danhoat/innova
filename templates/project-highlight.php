@@ -14,8 +14,6 @@
             <div class="body" id="accordion-ph" role="tablist">
                 <div class="card">
 
-
-
                     <?php  a_tab_project($id= "collapse1-ph", "show");?>
                     <?php  a_tab_project($id="collapse2-ph");?>
                      <?php a_tab_project($id="collapse3-ph");?>

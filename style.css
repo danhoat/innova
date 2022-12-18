@@ -459,7 +459,7 @@ article{
      max-width: 100%;
     height: auto;
 }
-.archive a{
+.archive article  a{
     text-decoration: none;
     font-size: 18px;
     color: #000;
@@ -467,4 +467,8 @@ article{
 footer{
     background: #F9F9F9;
     padding: 45px 30px;
+}
+.archive main{
+    display: grid;
+    grid-template-columns:  1fr 1fr 1fr;
 }
