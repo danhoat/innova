@@ -27,7 +27,7 @@ if($query->have_posts() ){
     }
 }
 ?>
-<section >
+<section class="news">
   <div class="container">
         <div class="text-center top-section-1">
             <h2>

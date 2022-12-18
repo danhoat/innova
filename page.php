@@ -1,18 +1,26 @@
 <?php get_header(); ?>
-<?php  // get_template_part('slider');?>
-    <main role="main">
+
+
+<?php get_template_part('templates/breadcrumb');?>
+
+<main role="main" archive.php>
 
     <?php
+    wp_reset_query();
     if ( have_posts() ) {
 
-        // Load posts loop.
         while ( have_posts() ) {
             the_post();
 
-            the_content();
+            get_template_part('templates/post','content');
         }
+
+        // Previous/next page navigation.
+
+    } else {
+        echo 'No post found.';
     }
     ?>
-  </main>
+</main>
 
 <?php get_footer(); ?>

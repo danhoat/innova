@@ -30,7 +30,7 @@ body {
 
 }
 main{
-    min-height: 650px;
+    min-height: 350px;
     padding-bottom: 20px;
     margin-bottom: 30px;
 }
@@ -429,7 +429,8 @@ grid-row-start: 1; grid-row-end: 3;
 .newcarouSel .carousel-caption{
     position: relative;
 }
-.archive main{
+.archive main,
+.page main{
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -501,11 +502,11 @@ footer{
     background: #F9F9F9;
     padding: 45px 30px;
 }
-.archive main{
+.archive main, main.archive{
     display: grid;
     grid-template-columns:  1fr 1fr 1fr;
 }
-.carousel-item img{
+.news .carousel-item img{
     max-width: 100%;
     height: auto;
 }
