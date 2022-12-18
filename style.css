@@ -515,3 +515,23 @@ footer{
     text-decoration: none;
     font-size: 18;
 }
+.sub-menu{
+    display: none;
+    z-index: 1000;
+    background-color: #fff;
+    width: 292px;
+    position: absolute;
+    padding: 0;
+    top:50px;
+}
+li.menu-item-has-children{
+    position: relative;
+}
+li:hover .sub-menu{
+    display: block;
+    position: absolute;
+}
+.sub-menu li{
+    border-bottom: 1px solid #ccc;
+    padding-left: 10px;
+}
