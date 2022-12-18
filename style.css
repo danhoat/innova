@@ -31,6 +31,8 @@ body {
 }
 main{
     min-height: 650px;
+    padding-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 .navbar-nav   li{
@@ -407,6 +409,7 @@ main{
     display: block;
     color: #fff;
     position: relative;
+    margin-bottom: 30px;
 }
 .banner .link-page{
     position: absolute;
@@ -447,7 +450,18 @@ main{
 .archive  h2{
     font-size: 23px;
 }
+article{
+    padding: 10px;
+}
 img{
     max-width: 100%;
     height: auto;
+}
+.col-thumbnail img{
+    border-radius: 5px;
+}
+.archive a{
+    text-decoration: none;
+    font-size: 18px;
+    color: #000;
 }

@@ -18,12 +18,16 @@ define('INNOVE_DIR', get_template_directory());
 
 
 require_once(INNOVE_DIR.'/html.php');
+require_once(INNOVE_DIR.'/includes/theme.php');
 
 Class Inova_Theme{
     function __construct(){
         add_action( 'after_setup_theme', array($this, 'innove_setup_theme') );
         add_action('init', array($this, 'init_theme') );
-          $this->theme_support();
+        $this->theme_support();
+        add_filter( 'excerpt_length', function(){return 100; });
+
+
     }
     function init_theme(){
         $this->theme_support();
@@ -119,6 +123,9 @@ Class Inova_Theme{
     }
 
 }
-
+function wpdocs_custom_excerpt_length( $length ) {
+    return 20;
+}
+add_filter( 'excerpt_length', 'wpdocs_custom_excerpt_length', 999 );
 
 $GLOBALS['innove'] = new Inova_Theme();
