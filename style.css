@@ -403,8 +403,44 @@ main{
 }
 .banner{
     background: url('images/banner.jpg');
-    height: 650px;
+    height: 450px;
     display: block;
-    line-height: 300px;
+    color: #fff;
+    position: relative;
+}
+.banner .link-page{
+    position: absolute;
+    top:35%;
+    width: 100%;
+    text-align: center;
+}
+.heading-title{
+    font-family: "UTMAvoBold";
+    color: #fff;
+    font-size: 36px;
+    line-height: 40px;
+    text-transform: uppercase;
+    position: relative;
+    padding-bottom: 20px;
+    margin-bottom: 10px;
+
+}
+.breadcrumb{
+    position: relative;
+}
+.sub-banner{
+     background: #312e2ea8;
+    height: 100%;
+}
+.breadcrumb{
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+.breadcrumb a{
+    color: #fff;
+    text-decoration: none;
+}
+.breadcrumb-item.active{
     color: #fff;
 }
