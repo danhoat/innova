@@ -29,6 +29,9 @@ body {
   font-family: "Roboto", sans-serif;
 
 }
+main{
+    min-height: 650px;
+}
 html,
 body {
     color: #131313;
