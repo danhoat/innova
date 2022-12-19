@@ -27,6 +27,9 @@
         display: block;
         overflow: hidden;
     }
+    .inner .item h3{
+        font-size: 13px;
+    }
     .welcome .inner .item:nth-child(1) {
         left: 29px;
         top: 120px;

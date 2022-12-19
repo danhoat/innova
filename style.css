@@ -206,10 +206,10 @@ section.news{
     width: 125%;
     font-size: 20px;
     text-transform: uppercase;
-    font-family: "UTMAvoBold";
+    font-family: "Oswald", sans-serif;;
     margin: 0;
-    font-size: 20px;
-    font-weight: 500;
+    font-size: 25px;
+    font-weight: 600;
 }
 .inner .item h3 a {
     color: #fff;
