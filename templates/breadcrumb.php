@@ -17,6 +17,9 @@ if( is_tax() ){
             $sub1 = '<a class="breadcrumb-item" href="'.get_term_link($tax).'"> '.$tax->name.'</a>';
         }
     }
+    if ( is_post_type_archive() ) {
+        $title = post_type_archive_title('', false);
+    }
 
 }
 ?>

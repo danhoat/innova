@@ -1,4 +1,3 @@
-
 <section class="project-highlights">
     <div class="container">
         <div class="text-center top-section-1">
@@ -22,7 +21,7 @@
         </div>
         <div class="btn-xtc">
 
-            <a href="/du-an-noi-bat.htm">Xem tất cả  <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+            <a href="<?php echo get_post_type_archive_link('du-an');?>">Xem tất cả  <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
         </div>
     </div>
 </section>
