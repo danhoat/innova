@@ -280,7 +280,7 @@ function avadanta_sections_settings( $wp_customize ){
     $wp_customize->add_panel( 'section_settings', array(
         'priority'       => 126,
         'capability'     => 'edit_theme_options',
-        'title'      => esc_html__('Avadanta Theme settings','avadanta'),
+        'title'      => esc_html__('Innova Theme settings','avadanta'),
                 'description' => __('Drag and Drop to Reorder', 'avadanta'). '<img class="avadanta-drag-spinner" src="'.admin_url('/images/spinner.gif').'">',
 
     ) );
@@ -293,29 +293,55 @@ function avadanta_sections_settings( $wp_customize ){
     ) );
 
 //Latest News Section
-    $wp_customize->add_section('avadanta_layout_sidebars',array(
-            'title' => esc_html__('Sidebar Layout','avadanta'),
+
+
+    // Giới thiệu công ty
+
+     $wp_customize->add_section('avadanta_layout_sidebars',array(
+            'title' => esc_html__('Blog Giối Thi','avadanta'),
             'panel' => 'section_settings',
             'priority'       => 9,
             ));
 
-         $wp_customize->add_setting('avadanta_blog_temp_layout',
+         $wp_customize->add_setting('front_block_as_headline',
         array(
             'sanitize_callback' => 'avadanta_sanitize_select',
-            'default'           => 'rightsidebar',
+             'default' => 'CÔNG TY BẮC NAM TRUNG',
+
         )
     );
-    $wp_customize->add_control('avadanta_blog_temp_layout',
+
+    $wp_customize->add_control('front_block_as_headline',
         array(
-            'type'        => 'select',
-            'label'       => esc_html__('Blog Template Layout', 'avadanta'),
+            'type'        => 'text',
+            'label'       => esc_html__('Tiêu Đề', 'avadanta'),
+            'description' => esc_html__('CÔNG TY BẮC NAM TRUNG', 'avadanta'),
+            'section'     => 'avadanta_layout_sidebars',
+
+
+        )
+    );
+
+
+    $wp_customize->add_section('avadanta_layout_sidebars',array(
+            'title' => esc_html__('Giới Thiệu Công Ty','avadanta'),
+            'panel' => 'section_settings',
+            'priority'       => 9,
+            ));
+
+         $wp_customize->add_setting('front_block_about_us',
+        array(
+            'sanitize_callback' => 'avadanta_sanitize_select',
+            'default'           => 'Với khẩu hiệu "1 ý chí, 10 thành công", tập thể CÔNG TY CỔ PHẦN XÂY DỰNG BẮC NAM TRUNG đang nỗ lực không ngừng tìm kiếm cơ hội trong các lĩnh vực "Đầu tư xây dựng - Thi công xây lắp - Kinh doanh, thương mại - Tư vấn, khảo sát, thiết kế" khai thác mọi tiềm năng để trở thành một Công ty đi đầu trong lĩnh vực xây dựng.',
+        )
+    );
+    $wp_customize->add_control('front_block_about_us',
+        array(
+            'type'        => 'textarea',
+            'label'       => esc_html__('Giới Thiệu Công Ty', 'avadanta'),
             'description' => esc_html__('This will be apply for blog template layout', 'avadanta'),
             'section'     => 'avadanta_layout_sidebars',
-            'choices'     => array(
-                'rightsidebar' => esc_html__('Right sidebar', 'avadanta'),
-                'leftsidebar'  => esc_html__('Left sidebar', 'avadanta'),
-                'fullwidth'    => esc_html__('No sidebar', 'avadanta'),
-            ),
+
         )
     );
 
@@ -362,58 +388,6 @@ function avadanta_sections_settings( $wp_customize ){
 
 
 
-    $wp_customize->add_section('avadanta_post_settings',
-        array(
-            'priority'    => null,
-            'title'       => esc_html__('Post Options', 'avadanta'),
-            'description' => '',
-            'panel'       => 'section_settings',
-        )
-    );
-
-
-    $wp_customize->add_setting('avadanta_single_post_thumb',
-        array(
-            'sanitize_callback' => 'avadanta_sanitize_checkbox',
-            'default'           => 1,
-        )
-    );
-    $wp_customize->add_control('avadanta_single_post_thumb',
-        array(
-            'type'        => 'checkbox',
-            'label'       => esc_html__('Enable Single Post Thumbnail', 'avadanta'),
-            'section'     => 'avadanta_post_settings',
-            'description' => esc_html__('Check this box to enable post thumbnail on single post.', 'avadanta'),
-        )
-    );
-    $wp_customize->add_setting('avadanta_single_post_meta',
-        array(
-            'sanitize_callback' => 'avadanta_sanitize_checkbox',
-            'default'           => 1,
-        )
-    );
-    $wp_customize->add_control('avadanta_single_post_meta',
-        array(
-            'type'        => 'checkbox',
-            'label'       => esc_html__('Enable Single Post Meta', 'avadanta'),
-            'section'     => 'avadanta_post_settings',
-            'description' => esc_html__('Check this box to enable single post meta such as post date, author, category, comment etc.', 'avadanta'),
-        )
-    );
-    $wp_customize->add_setting('avadanta_single_post_title',
-        array(
-            'sanitize_callback' => 'avadanta_sanitize_checkbox',
-            'default'           => 1,
-        )
-    );
-    $wp_customize->add_control('avadanta_single_post_title',
-        array(
-            'type'        => 'checkbox',
-            'label'       => esc_html__('Enable Single Post Title', 'avadanta'),
-            'section'     => 'avadanta_post_settings',
-            'description' => esc_html__('Check this box to enable title on single post.', 'avadanta'),
-        )
-    );
 
  $wp_customize->add_section('avadanta_footer_settings',
         array(
@@ -997,23 +971,23 @@ $wp_customize->add_setting('avadanta_copyright_enable',
 }
 add_action( 'customize_register', 'avadanta_sections_settings' );
 
-/**
- * Add selective refresh for Front page section section controls.
- */
-function avadanta_register_home_section_partials( $wp_customize ){
-    //News
-    $wp_customize->selective_refresh->add_partial( 'home_news_section_title', array(
-        'selector'            => '.section-module.blog .section-subtitle',
-        'settings'            => 'home_news_section_title',
-        'render_callback'  => 'avadanta_home_news_section_title_render_callback',
+// /**
+//  * Add selective refresh for Front page section section controls.
+//  */
+// function avadanta_register_home_section_partials( $wp_customize ){
+//     //News
+//     $wp_customize->selective_refresh->add_partial( 'home_news_section_title', array(
+//         'selector'            => '.section-module.blog .section-subtitle',
+//         'settings'            => 'home_news_section_title',
+//         'render_callback'  => 'avadanta_home_news_section_title_render_callback',
 
-    ) );
+//     ) );
 
-    $wp_customize->selective_refresh->add_partial( 'home_news_section_discription', array(
-        'selector'            => '.section-module.blog .section-title',
-        'settings'            => 'home_news_section_discription',
-        'render_callback'  => 'avadanta_home_news_section_discription_render_callback',
+//     $wp_customize->selective_refresh->add_partial( 'home_news_section_discription', array(
+//         'selector'            => '.section-module.blog .section-title',
+//         'settings'            => 'home_news_section_discription',
+//         'render_callback'  => 'avadanta_home_news_section_discription_render_callback',
 
-    ) );
-}
-add_action( 'customize_register', 'avadanta_register_home_section_partials' );
+//     ) );
+// }
+// add_action( 'customize_register', 'avadanta_register_home_section_partials' );

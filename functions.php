@@ -50,8 +50,8 @@ Class Inova_Theme{
         add_theme_support( 'title-tag' );
         add_theme_support('post-thumbnails');
         add_theme_support( 'custom-logo', array(
-            'height' => 480,
-            'width'  => 720,
+            'height' => 190,
+            'width'  => 55,
         ) );
 
         $args = array(
