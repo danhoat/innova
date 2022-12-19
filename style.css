@@ -53,6 +53,10 @@ Use it to make something cool, have fun, and share what you've learned with othe
     .welcome .inner {
         margin-top: 140px;
     }
+    .slick-initialized .slick-slide {
+
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
 }
 
 .container,
@@ -339,8 +343,6 @@ section.news{
 
 .slick-initialized .slick-slide {
     display: grid;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 .grid-item{
     display: grid;
