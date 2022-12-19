@@ -1,6 +1,10 @@
 <?php
 
-$args =  array('post_type' => 'post','post_status' => 'publish');
+$args =  array(
+    'post_type'     => 'post',
+    'post_status'   => 'publish',
+    'category__not_in' => 12
+);
 $query = new WP_Query($args);
 $html = '';
 if($query->have_posts() ){
