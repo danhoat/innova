@@ -20,6 +20,9 @@ if( is_tax() ){
     if ( is_post_type_archive() ) {
         $title = post_type_archive_title('', false);
     }
+    if( is_search() ){
+        $title = "Tìm kiếm";
+    }
 
 }
 ?>
