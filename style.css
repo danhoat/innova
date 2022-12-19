@@ -63,6 +63,10 @@ Use it to make something cool, have fun, and share what you've learned with othe
 body .container{
     max-width: 1200px !important;
 }
+ul{
+    margin: 0;
+    padding: 0;
+}
 
 body {
   background: #fff;
@@ -523,6 +527,25 @@ footer{
     background-image: url(images/bg-footer.png);
     background-repeat: no-repeat;
     background-position: right;
+    color: #666;
+    line-height: 24px;
+}
+#footer .header-f {
+    padding-left: 0px;
+    display: block;
+    color: #205eab;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+footer .contact-f>p {
+    position: relative;
+    padding-left: 0px;
+    margin: 0 0 10px 0;
+}
+footer .contact-f img{
+    padding-right: 10px;
 }
 .archive main, main.archive{
     display: grid;
@@ -602,4 +625,39 @@ div.wpforms-container-full .wpforms-form .wpforms-field-label{
 }
 div.wpforms-container-full .wpforms-form button[type=submit]{
     float: right;
+}
+.breadcrumb-item+.breadcrumb-item::before{
+    float: none;
+    color: #fff;
+}
+#footer .nav-footer .block {
+    display: inline-block;
+    width: 50%;
+    float: left;
+    padding-right: 30px;
+    margin-bottom: 15px;
+}
+#footer .nav-footer .block ul li {
+    padding-left: 13px;
+    position: relative;
+    list-style: none;
+    margin: 0;
+}
+
+footer .nav-footer .block ul li a {
+    color: #666;
+    text-decoration: none;
+}
+#footer .nav-footer .block ul li:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 11px;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: #205eab;
+    margin-right: 9px;
+    -webkit-transform: translateY(-2px);
+    transform: translateY(-2px);
 }

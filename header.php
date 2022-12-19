@@ -1,12 +1,9 @@
 <!doctype html>
-<html lang="en">
+<html <?php language_attributes(); ?> >
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="<?php bloginfo( 'charset' ); ?>" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <link rel="icon" href="<?php echo INNOVA_IMG_URL;?>/favicon.jpg">
-
-    <title><?php wp_title(); ?></title>
 
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -15,7 +12,7 @@
 
     <link href="<?php echo get_stylesheet_uri();?>?ver=<?php echo rand();?>" rel="stylesheet">
     <link href="<?php echo INNOVA_URL;?>/mobile.css?ver=<?php echo rand();?>" rel="stylesheet">
-    <?php wp_head();?>
+    <?php wp_head(); ?>
   </head>
   <body <?php body_class();?>>
 
