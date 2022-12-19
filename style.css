@@ -73,7 +73,9 @@ main{
     padding-bottom: 20px;
     margin-bottom: 30px;
 }
-
+section.news{
+    padding: 65px 0 35px 0;
+}
 .navbar-nav   li{
     list-style: none;
     padding: 10px;
