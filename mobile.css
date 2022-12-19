@@ -65,4 +65,7 @@
     .archive article img{
         padding: 0 10px;
     }
+    .banner{
+        height: 200px;
+    }
 }

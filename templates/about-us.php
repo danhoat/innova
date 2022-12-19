@@ -1,5 +1,6 @@
 <?php
 global $innova_option;
+$innova_option = get_innova_option();
 $head_line  = $innova_option->head_line;
 $about_us   = $innova_option->about_us;
 
