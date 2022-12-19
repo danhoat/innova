@@ -85,7 +85,7 @@
                 </div>
 
                 <div class="sociat">
-                    <a href="https://www.facebook.com/C%C3%B4ng-ty-CP-%C4%90%E1%BA%A7u-t%C6%B0-X%C3%A2y-d%E1%BB%B1ng-v%C3%A0-Th%C6%B0%C6%A1ng-m%E1%BA%A1i-MHDI-10-1677127042540149/">
+                    <a href="#">
                         <i class="fa-brands fa-facebook-f"></i>
                     </a>
                     <a href="google + ">
