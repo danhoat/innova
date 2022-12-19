@@ -18,7 +18,7 @@ if($query->have_posts() ){
         if( $i %3 == 0 && $i >0)
            $html.='<div class="carousel-item "> <div class="row">';
 
-        $html .='<div class="col-4"><a href="'.get_permalink().'">'.get_innova_post_thumbnail().'</a>';
+        $html .='<div class="col-6 col-md-4"><a href="'.get_permalink().'">'.get_innova_post_thumbnail().'</a>';
         $html.='<div class="item-caption d-none d-md-block">';
         $html.='<h5><a href="'.get_permalink().'">'.get_the_title().'</a></h5>';
         $html.='<p>'.get_the_excerpt().'</p>';
