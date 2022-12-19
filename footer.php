@@ -15,6 +15,15 @@
 
                     <div class="block">
                         <strong class="header-f">Giới thiệu </strong>
+                           <strong class="header-f">Tin tức</strong>
+                    <ul>
+                        <li>
+                           <a title="Tin tức nội bộ" href="/tin-tuc-noi-bo.htm">Tin tức nội bộ</a>
+                        </li>
+                        <li>
+                           <a title="Tin tức chuyên ngành" href="/tin-tuc-chuyen-nganh.htm">Tin tức chuyên ngành</a>
+                        </li>
+                    </ul>
 
                     </div>
                     <div class="block">
@@ -33,27 +42,13 @@
                        <a title="Tư vấn khảo sát thiết kế" href="/tu-van-khao-sat-thiet-ke.htm">Tư vấn khảo sát thiết kế</a>
                     </li></ul>
                      </div>
-                     <div class="block">
-                        <strong class="header-f">Tin tức</strong>
-                    <ul>
-                    <li>
-                       <a title="Tin tức nội bộ" href="/tin-tuc-noi-bo.htm">Tin tức nội bộ</a>
-                    </li>
-                    <li>
-                       <a title="Tin tức chuyên ngành" href="/tin-tuc-chuyen-nganh.htm">Tin tức chuyên ngành</a>
-                    </li></ul>
-                     </div>
+
                      <div class="block">
                         <strong class="header-f">Thư viện ảnh &amp; video</strong>
 
                      </div>
                      <div class="block">
-                        <strong class="header-f">Tuyển dụng</strong>
-
-                     </div>
-                     <div class="block">
-                        <strong class="header-f">Liên hệ</strong>
-
+                        <strong class="header-f">Liên Hệ</strong>
                      </div>
                 </div>
 
