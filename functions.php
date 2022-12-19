@@ -53,6 +53,17 @@ Class Inova_Theme{
             'height' => 480,
             'width'  => 720,
         ) );
+
+        $args = array(
+            'default-image'      => get_template_directory_uri() . 'img/default-image.jpg',
+            'default-text-color' => '000',
+            'width'              => 1000,
+            'height'             => 250,
+            'flex-width'         => true,
+            'flex-height'        => true,
+        );
+    add_theme_support( 'custom-header', $args );
+
     }
     function setup_post_type(){
 
