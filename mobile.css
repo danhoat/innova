@@ -11,41 +11,41 @@
         font-size: 20px;
     }
     .welcome .inner .item {
-        width: 129px;
-        height: 129px;
+        width: 119px;
+        height: 119px;
         padding: 0;
         position: absolute;
     }
 
     .welcome .inner{
         position: relative;
-        height: 450px;
+        height: 379px;
         margin: 0;
         left: 0;
-        top: 45px;
+        top: 25px;
         width: 100%;
         display: block;
         overflow: hidden;
     }
     .inner .item h3{
-        font-size: 13px;
+        font-size: 12px;
     }
     .welcome .inner .item:nth-child(1) {
         left: 29px;
         top: 120px;
     }
      .welcome .inner .item:nth-child(3) {
-        left: 214px;
+        left: 199px;
         top: 120px
     }
     .welcome .inner .item:nth-child(2) {
-        top: 133px;
-        left: 121px;
+        top: 140px;
+        left: 114px;
     }
 
     .welcome .inner .item:nth-child(4) {
-        bottom: 4px;
-        left: 121px
+        bottom: -50px;
+        left: 114px;
     }
     .welcome{
         padding-bottom: 30px;
