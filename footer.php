@@ -15,41 +15,33 @@
 
                     <div class="block">
                         <strong class="header-f">Giới thiệu </strong>
-                           <strong class="header-f">Tin tức</strong>
-                    <ul>
-                        <li>
-                           <a title="Tin tức nội bộ" href="/tin-tuc-noi-bo.htm">Tin tức nội bộ</a>
-                        </li>
-                        <li>
-                           <a title="Tin tức chuyên ngành" href="/tin-tuc-chuyen-nganh.htm">Tin tức chuyên ngành</a>
-                        </li>
-                    </ul>
+                        <strong class="header-f">Tin tức</strong>
+                        <strong class="header-f">Liên Hệ</strong>
+                        <strong class="header-f">Thư viện ảnh &amp; video</strong>
 
                     </div>
                     <div class="block">
                         <strong class="header-f">Lĩnh vực kinh doanh</strong>
-                    <ul>
-                    <li>
-                       <a title="Dự án đầu tư" href="/du-an.htm">Dự án đầu tư</a>
-                    </li>
-                    <li>
-                       <a title="Thi công xây lắp" href="/thi-cong-xay-lap-2.htm">Thi công xây lắp</a>
-                    </li>
-                    <li>
-                       <a title="Kinh doanh, thương mại" href="/kinh-doanh-thuong-mai.htm">Kinh doanh, thương mại</a>
-                    </li>
-                    <li>
-                       <a title="Tư vấn khảo sát thiết kế" href="/tu-van-khao-sat-thiet-ke.htm">Tư vấn khảo sát thiết kế</a>
-                    </li></ul>
+                        <ul>
+
+                            <?php $categories = get_terms('danh-muc', array(
+                                'hide_empty'    => false,
+                                'fields'        => 'all',
+                                'exclude'       => 1,
+                                'number'    => 5,
+                            ));
+                            if($categories && !is_wp_error($categories)){
+                                foreach($categories as $term){
+                                    ?>
+                                    <li>
+                                       <a title="Dự án đầu tư" href="<?php echo get_term_link($term);?>"><?php echo $term->name;?></a>
+                                    </li>
+                                    <?php
+                                }
+                            } ?>
+                        </ul>
                      </div>
 
-                     <div class="block">
-                        <strong class="header-f">Thư viện ảnh &amp; video</strong>
-
-                     </div>
-                     <div class="block">
-                        <strong class="header-f">Liên Hệ</strong>
-                     </div>
                 </div>
 
             </div>

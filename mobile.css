@@ -68,4 +68,11 @@
     .banner{
         height: 200px;
     }
+    #footer .nav-footer .block{
+        width: 100%;
+    }
+    footer{
+        padding: 25px 10px;
+
+    }
 }
