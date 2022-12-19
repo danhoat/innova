@@ -502,6 +502,9 @@ article{
 footer{
     background: #F9F9F9;
     padding: 45px 30px;
+    background-image: url(images/bg-footer.png);
+    background-repeat: no-repeat;
+    background-position: right;
 }
 .archive main, main.archive{
     display: grid;
@@ -535,4 +538,20 @@ li:hover .sub-menu{
 .sub-menu li{
     border-bottom: 1px solid #eaeaeacc;
     padding-left: 10px;
+}
+div.wpforms-container-full .wpforms-form input[type=text]{
+    width: 80%;
+    display: inline-block;
+}
+
+div.wpforms-container-full .wpforms-form .wpforms-field-label{
+    width: 20%;
+    display: inline-block;
+}
+.page div.wpforms-container-full .wpforms-form .wpforms-field{
+    display: inline-block;
+    width: 100%;
+}
+div.wpforms-container-full .wpforms-form button[type=submit]{
+    float: right;
 }

@@ -110,11 +110,11 @@
     </p>
     <p>
         <img src="pic/icons/f3.png" alt="">
-        <span>Email: congtymhdi10@gmail.com</span>
+        <span>Email: bacnamtrung@gmail.com</span>
     </p>
     <p>
         <img src="pic/icons/f4.png" alt="">
-        <span>Website: www.mhdi10.vn</span>
+        <span>Website: bacnamtrung.com</span>
     </p>
 </div>
 
