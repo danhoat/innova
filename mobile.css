@@ -1,0 +1,68 @@
+@media only screen and (max-width: 600px) {
+    .innova-slider img{
+        height: auto;
+    }
+
+    .navbar-toggler-icon {
+        background-image: url('images/toogle-icon.svg')
+    }
+    .top-section-1 h2{
+        font-weight: bold;
+        font-size: 20px;
+    }
+    .welcome .inner .item {
+        width: 129px;
+        height: 129px;
+        padding: 0;
+        position: absolute;
+    }
+
+    .welcome .inner{
+        position: relative;
+        height: 450px;
+        margin: 0;
+        left: 0;
+        top: 86px;
+        width: 100%;
+        display: block;
+        overflow: hidden;
+    }
+    .welcome .inner .item:nth-child(1) {
+        left: 29px;
+        top: 120px;
+    }
+     .welcome .inner .item:nth-child(3) {
+        left: 214px;
+        top: 120px
+    }
+    .welcome .inner .item:nth-child(2) {
+        top: 133px;
+        left: 121px;
+    }
+
+    .welcome .inner .item:nth-child(4) {
+        bottom: 4px;
+        left: 121px
+    }
+    .welcome{
+        padding-bottom: 30px;
+    }
+    .slick-initialized .slick-slide{
+        grid-template-columns: 1fr;
+    }
+    main{
+        max-width: 100%;
+    }
+    .grid-item img{
+        max-width: 100%;
+        height: auto;
+        max-height: 277px;
+        width: auto;
+    }
+    .archive main, main.archive{
+        grid-template-columns: 1fr;
+    }
+    .archive article img{
+        padding: 0 10px;
+    }
+}
