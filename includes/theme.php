@@ -25,8 +25,6 @@ function innova_custom_logo(){
 
 function get_innova_option(){
 	$options = get_option("innova_theme_options");
-	echo 'test';
-	var_dump($options);
 	$default = array(
 		'head_line' 		=> 'Công TY Bắc Nam Trung',
 		'about_us' 			=> '',
