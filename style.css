@@ -677,3 +677,6 @@ footer .nav-footer .block ul li a {
     text-align: center;
     border-radius: 50%;
 }
+body div.wpforms-container-full .wpforms-form textarea.wpforms-field-large{
+    height: 150px !important;
+}
