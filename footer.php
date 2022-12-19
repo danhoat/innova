@@ -60,12 +60,7 @@
                 <div class="contact-f">
                     <p>
                         <img src="<?php echo INNOVA_IMG_URL;?>/marker.png" alt="">
-                        <span> Địa chỉ: 29/18 Đường B3, Phường Tây Thạnh, Quận Tân Phú, TP.HCM</span>
-                    </p>
-
-                    <p>
-                        <img src="pic/icons/f1.png" alt="">
-                        <span> Mã số thuế: 0305482968</span>
+                        <span> Địa chỉ: 29/18 Đường B3, Phường Tây Thạnh, Quận Tân Phú, TP.HCM<br /> &nbsp;&nbsp;&nbsp; &nbsp; Mã số thuế: 0305482968</span>
                     </p>
 
                     <p>
@@ -91,16 +86,16 @@
 
                 <div class="sociat">
                     <a href="https://www.facebook.com/C%C3%B4ng-ty-CP-%C4%90%E1%BA%A7u-t%C6%B0-X%C3%A2y-d%E1%BB%B1ng-v%C3%A0-Th%C6%B0%C6%A1ng-m%E1%BA%A1i-MHDI-10-1677127042540149/">
-                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                        <i class="fa-brands fa-facebook-f"></i>
                     </a>
                     <a href="google + ">
-                        <i class="fa fa-google-plus" aria-hidden="true"></i>
+                        <i class="fa-brands fa-google-plus-g"></i>
                     </a>
                     <a href="Twitter">
-                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                        <i class="fa-brands fa-twitter"></i>
                     </a>
                     <a href="pinterest">
-                        <i class="fa fa-pinterest-p" aria-hidden="true"></i>
+                        <i class="fa-brands fa-pinterest-p"></i>
                     </a>
                 </div>
 
