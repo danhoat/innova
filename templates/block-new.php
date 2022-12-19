@@ -35,7 +35,7 @@ if($query->have_posts() ){
   <div class="container">
         <div class="text-center top-section-1">
             <h2>
-                <a href="/tin-tuc.htm">TIN TỨC SỰ KIỆN</a>
+                <a href="<?php echo home_url('tin-tuc');?>">TIN TỨC SỰ KIỆN</a>
             </h2>
         </div>
          <hr class="featurette-divider">

@@ -2,7 +2,7 @@
     <div class="container">
         <div class="text-center top-section-1">
             <h2>
-                <a href="/du-an-noi-bat.htm">dự án nổi bật</a>
+                Dự án nổi bật
             </h2>
         </div>
         <div class="accordion tab-ph">
