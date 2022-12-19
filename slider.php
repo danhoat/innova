@@ -16,7 +16,7 @@ $show_label = false;
     <div class="carousel-item active" data-bs-interval="10000">
       <img src="<?php echo $img_1;?>" class="d-block w-100" height="630" alt="...">
       <div class="carousel-caption d-none d-md-block">
-        <?php if( $hide_label ){?>
+        <?php if( $show_label ){?>
           <h5>First slide label</h5>
           <p>Some representative placeholder content for the first slide.</p>
         <?php } ?>
@@ -25,7 +25,7 @@ $show_label = false;
     <div class="carousel-item" data-bs-interval="2000">
       <img src="<?php echo $img_2;?>"  class="d-block w-100" alt="..." height="630">
       <div class="carousel-caption d-none d-md-block">
-        <?php if( $hide_label ){?>
+        <?php if( $show_label ){?>
         <h5>Second slide label</h5>
         <p>Some representative placeholder content for the second slide.</p>
       <?php } ?>
@@ -34,7 +34,7 @@ $show_label = false;
     <div class="carousel-item">
       <img src="<?php echo $img_3;?>" class="d-block w-100" alt="..." height="630">
       <div class="carousel-caption d-none d-md-block">
-          <?php if( $hide_label ){?>
+          <?php if( $show_label ){?>
         <h5>Third slide label</h5>
         <p>Some representative placeholder content for the third slide.</p>
       <?php } ?>
