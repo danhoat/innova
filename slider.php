@@ -1,3 +1,11 @@
+<?php
+
+global $innova_option;
+$img_1 = $innova_option->image_slider_1;
+$img_2 = $innova_option->image_slider_2;
+$img_3 = $innova_option->image_slider_3;
+$show_label = false;
+?>
 <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
   <div class="carousel-indicators">
     <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -6,24 +14,30 @@
   </div>
   <div class="carousel-inner">
     <div class="carousel-item active" data-bs-interval="10000">
-      <img src="https://st2.depositphotos.com/2963315/9499/i/950/depositphotos_94995442-stock-photo-architectural-composition-made-of-corporative.jpg" class="d-block w-100" height="630" alt="...">
+      <img src="<?php echo $img_1;?>" class="d-block w-100" height="630" alt="...">
       <div class="carousel-caption d-none d-md-block">
-        <h5>First slide label</h5>
-        <p>Some representative placeholder content for the first slide.</p>
+        <?php if( $hide_label ){?>
+          <h5>First slide label</h5>
+          <p>Some representative placeholder content for the first slide.</p>
+        <?php } ?>
       </div>
     </div>
     <div class="carousel-item" data-bs-interval="2000">
-      <img src="https://img.freepik.com/free-vector/abstract-website-banner-with-modern-shapes_1361-1738.jpg?w=1800" class="d-block w-100" alt="..." height="630">
+      <img src="<?php echo $img_2;?>"  class="d-block w-100" alt="..." height="630">
       <div class="carousel-caption d-none d-md-block">
+        <?php if( $hide_label ){?>
         <h5>Second slide label</h5>
         <p>Some representative placeholder content for the second slide.</p>
+      <?php } ?>
       </div>
     </div>
     <div class="carousel-item">
-      <img src="https://img.freepik.com/free-vector/abstract-website-banner-with-modern-shapes_1361-1738.jpg?w=1800" class="d-block w-100" alt="..." height="630">
+      <img src="<?php echo $img_3;?>" class="d-block w-100" alt="..." height="630">
       <div class="carousel-caption d-none d-md-block">
+          <?php if( $hide_label ){?>
         <h5>Third slide label</h5>
         <p>Some representative placeholder content for the third slide.</p>
+      <?php } ?>
       </div>
     </div>
   </div>

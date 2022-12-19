@@ -22,3 +22,18 @@ function innova_custom_logo(){
 		echo '<img src="'.INNOVA_IMG_URL.'/logo.jpg">';
 	}
 }
+
+function get_innova_option(){
+	$options = get_option("innova_theme_options");
+	echo 'test';
+	var_dump($options);
+	$default = array(
+		'head_line' 		=> 'Công TY Bắc Nam Trung',
+		'about_us' 			=> '',
+		'image_slider_1' 	=> INNOVA_IMG_URL.'/slider.jpg',
+		'image_slider_2' 	=> INNOVA_IMG_URL.'/slider.jpg',
+		'image_slider_3' 	=> INNOVA_IMG_URL.'/slider.jpg',
+	);
+	$result = wp_parse_args($options, $default);
+	return (object) $result;
+}

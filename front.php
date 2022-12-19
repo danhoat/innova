@@ -2,7 +2,8 @@
 /**
  * Template Name: Front Page
  */
-
+global $innova_option;
+$innova_option = get_innova_option();
 ?>
 
 <?php get_header(); ?>

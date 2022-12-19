@@ -18,10 +18,5 @@
   </head>
   <body <?php body_class();?>>
 
-    <header>
+    <header><?php get_template_part('templates/nav'); ?></header>
 
-      <?php get_template_part('templates/nav'); ?>
-
-    </header>
-
-<!-- mobile right to left !-->
