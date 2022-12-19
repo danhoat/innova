@@ -430,7 +430,8 @@ grid-row-start: 1; grid-row-end: 3;
     position: relative;
 }
 .archive main,
-.page main{
+.single main,
+main.archive{
     max-width: 1200px;
     margin: 0 auto;
 }
