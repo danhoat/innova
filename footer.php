@@ -98,19 +98,25 @@
 
             <div class="col-12 col-lg-6 right">
 
-<strong class="header-f">CÔNG TY CỔ PHẦN ĐẦU TƯ XÂY DỰNG VÀ THƯƠNG MẠI BẮC TRUNG NAM</strong>
+<strong class="header-f">CÔNG TY CỔ PHẦN XÂY DỰNG BẮC NAM TRUNG</strong>
 <div class="contact-f">
     <p>
         <img src="pic/icons/f1.png" alt="">
-        <span>Địa chỉ: Tầng 19, tòa nhà MD Complex Tower, số 68, đường Nguyễn Cơ Thạch, KĐT Mỹ Đình I - phường Cầu Diễn - quận Nam Từ Liêm - TP Hà Nội.</span>
+        <span> Địa chỉ: 29/18 Đường B3, Phường Tây Thạnh, Quận Tân Phú, TP.HCM</span>
     </p>
+
+    <p>
+        <img src="pic/icons/f1.png" alt="">
+        <span> Mã số thuế: 0305482968</span>
+    </p>
+
     <p>
         <img src="pic/icons/f2.png" alt="">
-        <span>Điện thoại: 024 3688 2626 - Fax: 024.3688.2626</span>
+        <span>Điện thoại:028.6681.9797  Fax: 028.6681.9797  </span>
     </p>
     <p>
         <img src="pic/icons/f3.png" alt="">
-        <span>Email: bacnamtrung@gmail.com</span>
+        <span>Email: bacnamtrung08@gmail.com</span>
     </p>
     <p>
         <img src="pic/icons/f4.png" alt="">

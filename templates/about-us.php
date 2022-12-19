@@ -15,7 +15,7 @@ $categories = get_terms('danh-muc', array(
         <strong>Chào mừng đến với</strong>
         <h2>Công Ty Bắc Nam  TRUNG</h2>
         <div style="text-align: center;">
-            Với khẩu hiệu "1 ý chí, 10 thành công", tập thể<strong> Công ty&nbsp;Cổ phần Đầu tư Xây dựng và Thương mại Bắc Nam Trung</strong> đang nỗ lực không ngừng tìm kiếm cơ hội trong các lĩnh vực "Đầu tư xây dựng - Thi công xây lắp - Kinh doanh, thương mại - Tư vấn, khảo sát, thiết kế" khai thác mọi tiềm năng để trở thành một Công ty đi đầu trong lĩnh vực xây dựng.</div>
+            Với khẩu hiệu "1 ý chí, 10 thành công", tập thể<strong> CÔNG TY CỔ PHẦN XÂY DỰNG BẮC NAM TRUNG</strong> đang nỗ lực không ngừng tìm kiếm cơ hội trong các lĩnh vực "Đầu tư xây dựng - Thi công xây lắp - Kinh doanh, thương mại - Tư vấn, khảo sát, thiết kế" khai thác mọi tiềm năng để trở thành một Công ty đi đầu trong lĩnh vực xây dựng.</div>
         <div style="text-align: center;">
             &nbsp;</div>
         <br>

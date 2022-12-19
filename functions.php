@@ -15,10 +15,13 @@ if( ! defined( 'ABSPATH' ) )
 define('INNOVA_URL', get_template_directory_uri() );
 define('INNOVA_IMG_URL', INNOVA_URL.'/images/');
 define('INNOVE_DIR', get_template_directory());
+define('INNOVA_THEME_DIR',get_template_directory() );
 
 
-require_once(INNOVE_DIR.'/html.php');
-require_once(INNOVE_DIR.'/includes/theme.php');
+require (  INNOVA_THEME_DIR.'/html.php');
+require ( INNOVA_THEME_DIR.'/includes/theme.php');
+require ( INNOVA_THEME_DIR . '/customizer/innova-customizer.php' );
+
 
 Class Inova_Theme{
     function __construct(){
@@ -42,6 +45,7 @@ Class Inova_Theme{
 
     }
     function theme_support(){
+        add_theme_support( 'custom-logo' );
         add_theme_support('widgets');
         add_theme_support( 'title-tag' );
         add_theme_support('post-thumbnails');
@@ -102,10 +106,10 @@ Class Inova_Theme{
         'all_items' => __( 'All Danh Mục' ),
         'parent_item' => __( 'Parent Subject' ),
         'parent_item_colon' => __( 'Parent Subject:' ),
-        'edit_item' => __( 'Edit Subject' ),
-        'update_item' => __( 'Update Subject' ),
-        'add_new_item' => __( 'Add New Subject' ),
-        'new_item_name' => __( 'New Subject Name' ),
+        'edit_item' => __( 'Sửa Danh Mục' ),
+        'update_item' => __( 'Cập Nhật' ),
+        'add_new_item' => __( 'Thêm Dự Án' ),
+        'new_item_name' => __( 'Tên Dự Án' ),
         'menu_name' => __( 'Danh Mục' ),
     );
 

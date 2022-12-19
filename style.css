@@ -140,7 +140,7 @@ main{
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
 }
- .inner .item:hover .img .khungAnh .khungAnhCrop:hover {
+.inner .item:hover .img .khungAnh .khungAnhCrop:hover {
     -webkit-transform: scale(1.05);
     transform: scale(1.05);
 }
@@ -484,6 +484,12 @@ main.archive{
 }
 article{
     padding: 10px;
+    overflow: hidden;
+}
+article img:hover{
+
+    1-webkit-transform: scale(1.05);
+    1transform: scale(1.05);
 }
 
 .col-thumbnail img{
@@ -509,7 +515,7 @@ footer{
 .archive main, main.archive{
     display: grid;
     grid-template-columns:  1fr 1fr 1fr;
-    grid-column-gap: 15px;
+    grid-column-gap: 30px;
     grid-row-gap: 15px;
 }
 .news .carousel-item img{
