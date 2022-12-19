@@ -113,6 +113,8 @@ section.news{
     padding-top: 90px;
     width: 1070px;
     max-width: 100%;
+    left: 65px;
+    position: relative;
     padding-bottom: 40px;
 }
 .inner .item .img {

@@ -22,7 +22,7 @@
         height: 450px;
         margin: 0;
         left: 0;
-        top: 86px;
+        top: 45px;
         width: 100%;
         display: block;
         overflow: hidden;
@@ -46,6 +46,7 @@
     }
     .welcome{
         padding-bottom: 30px;
+        padding-top: 20px;
     }
     .slick-initialized .slick-slide{
         grid-template-columns: 1fr;
