@@ -119,8 +119,8 @@ Class Inova_Theme{
         'parent_item_colon' => __( 'Parent Subject:' ),
         'edit_item' => __( 'Sửa Danh Mục' ),
         'update_item' => __( 'Cập Nhật' ),
-        'add_new_item' => __( 'Thêm Dự Án' ),
-        'new_item_name' => __( 'Tên Dự Án' ),
+        'add_new_item' => __( 'Thêm Danh Mục' ),
+        'new_item_name' => __( 'Tên Danh Mục' ),
         'menu_name' => __( 'Danh Mục' ),
     );
 

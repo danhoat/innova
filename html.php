@@ -35,7 +35,7 @@ function a_new_col(){
      ?>
    <div id="<?php echo $id;?>" class="collapse <?php echo $show;?> " role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion-ph">
         <div class="card-body slick-initialized slick-slider"><div aria-live="polite" class="slick-list draggable"><div class="slick-track" role="listbox" style="opacity: 1; width: 1200px; transform: translate3d(0px, 0px, 0px);">
-        <div class="inner slick-slide slick-current slick-<?php echo $acti;?>" data-slick-index="0" aria-hidden="false" tabindex="-1" role="option" aria-describedby="slick-slide40" style="width: 1200px;">
+        <div class="inner slick-slide slick-current slick-<?php echo $acti;?>" data-slick-index="0" aria-hidden="false" tabindex="-1" role="option" aria-describedby="slick-slide40">
 
             <?php
             $i = 1;

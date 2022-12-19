@@ -15,6 +15,42 @@ Text Domain: avadanta
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 */
+@media only screen and (min-width: 600px) {
+    .grid-item-1{
+        grid-row-start: 1; grid-row-end: 3;
+        grid-column-start:1;
+        grid-column-end: 3;
+    }
+    .top-section-1 h2::after, .top-section-1 h2::before {
+    content: "";
+    height: 9px;
+    width: 153px;
+    background: url(images/2.png) no-repeat center;
+    display: inline-block;
+    margin-right: 15px;
+    -webkit-transform: translateY(-7px);
+    transform: translateY(-7px);
+    }
+    .top-section-1 h2::after, .top-section-1 h2::before {
+        content: "";
+        height: 9px;
+        width: 153px;
+        background: url(images/2.png) no-repeat center;
+        display: inline-block;
+        margin-right: 15px;
+        -webkit-transform: translateY(-7px);
+        transform: translateY(-7px);
+    }
+    .top-section-1 h2::after {
+        background: url(images/3.png) no-repeat center;
+        margin-right: 0;
+        margin-left: 15px;
+    }
+    .accordion .card-body {
+        margin-left: -15px;
+        margin-right: -15px;
+    }
+}
 
 .container,
 body .container{
@@ -225,36 +261,12 @@ main{
     margin-bottom: 20px;
     color: #205eab;
 }
-.top-section-1 h2::after, .top-section-1 h2::before {
-    content: "";
-    height: 9px;
-    width: 153px;
-    background: url(images/2.png) no-repeat center;
-    display: inline-block;
-    margin-right: 15px;
-    -webkit-transform: translateY(-7px);
-    transform: translateY(-7px);
-}
+
 .top-section-1 h2 a {
     color: #205eab;
     display: inline-block;
 }
 
-.top-section-1 h2::after, .top-section-1 h2::before {
-    content: "";
-    height: 9px;
-    width: 153px;
-    background: url(images/2.png) no-repeat center;
-    display: inline-block;
-    margin-right: 15px;
-    -webkit-transform: translateY(-7px);
-    transform: translateY(-7px);
-}
-.top-section-1 h2::after {
-    background: url(images/3.png) no-repeat center;
-    margin-right: 0;
-    margin-left: 15px;
-}
 .accordion .header {
     text-align: center;
     padding-bottom: 30px;
@@ -330,11 +342,7 @@ main{
     display: grid;
     position: relative;
 }
-.grid-item-1{
-grid-row-start: 1; grid-row-end: 3;
- grid-column-start:1;
-    grid-column-end: 3;
-}
+
 .slick-slide h3{
     position: absolute;
     bottom: 15px;
@@ -361,8 +369,6 @@ grid-row-start: 1; grid-row-end: 3;
     padding: 0;
 }
 .accordion .card-body {
-    margin-left: -15px;
-    margin-right: -15px;
     padding: 0;
 }
 .slick-slide {

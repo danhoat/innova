@@ -13,10 +13,11 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@400;500;700&family=Dancing+Script:wght@400;500&family=K2D&family=Roboto&display=swap" rel="stylesheet">
 
-    <link href="<?php echo get_stylesheet_uri();?>?vers=<?php echo rand();?>" rel="stylesheet">
+    <link href="<?php echo get_stylesheet_uri();?>?ver=<?php echo rand();?>" rel="stylesheet">
+    <link href="<?php echo INNOVA_URL;?>/mobile.css?ver=<?php echo rand();?>" rel="stylesheet">
     <?php wp_head();?>
   </head>
   <body <?php body_class();?>>
 
-    <header><?php get_template_part('templates/nav'); ?></header>
+  <header><?php get_template_part('templates/nav'); ?></header>
 

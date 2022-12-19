@@ -1045,7 +1045,7 @@ $wp_customize->add_setting('avadanta_copyright_enable',
 
 
 }
-add_action( 'customize_register', 'avadanta_sections_settings' );
+//add_action( 'customize_register', 'avadanta_sections_settings' );
 
 // /**
 //  * Add selective refresh for Front page section section controls.
