@@ -1,11 +1,11 @@
 <?php
 
-function themename_customize_register($wp_customize){
+function innova_customize_register($wp_customize){
 
     $wp_customize->add_section('innova_options_scheme', array(
         'title'    => __('Innova Options', 'themename'),
         'description' => '',
-        'priority' => 120,
+        'priority' => 50,
     ));
 
     //  =============================
@@ -71,8 +71,8 @@ function themename_customize_register($wp_customize){
 
     ));
 
-    $wp_customize->add_control( new WP_Customize_Image_Control($wp_customize, 'image_upload_test', array(
-        'label'    => __('Image Upload Test', 'themename'),
+    $wp_customize->add_control( new WP_Customize_Image_Control($wp_customize, 'img_slider1', array(
+        'label'    => __('Image Slider 1 ', 'themename'),
         'section'  => 'innova_options_scheme',
         'settings' => 'innova_theme_options[image_slider_1]',
     )));
@@ -86,13 +86,13 @@ function themename_customize_register($wp_customize){
 
     ));
 
-    $wp_customize->add_control( new WP_Customize_Image_Control($wp_customize, 'slider2', array(
-        'label'    => __('Image Upload Test', 'themename'),
+    $wp_customize->add_control( new WP_Customize_Image_Control($wp_customize, 'img_slider2', array(
+        'label'    => __('Image Slider 2', 'themename'),
         'section'  => 'innova_options_scheme',
         'settings' => 'innova_theme_options[image_slider_2]',
     )));
 
-     //  = Image Upload3              =
+      //  = Image Upload3              =
     //  =============================
     $wp_customize->add_setting('innova_theme_options[image_slider_3]', array(
         'default'           => 'image.jpg',
@@ -102,8 +102,8 @@ function themename_customize_register($wp_customize){
 
     ));
 
-    $wp_customize->add_control( new WP_Customize_Image_Control($wp_customize, 'slider2', array(
-        'label'    => __('Image Upload Test', 'themename'),
+    $wp_customize->add_control( new WP_Customize_Image_Control($wp_customize, 'img_slider3', array(
+        'label'    => __('Image Slider 3', 'themename'),
         'section'  => 'innova_options_scheme',
         'settings' => 'innova_theme_options[image_slider_3]',
     )));
@@ -227,7 +227,7 @@ function themename_customize_register($wp_customize){
     ));
 }
 
-add_action('customize_register', 'themename_customize_register', 1);
+add_action('customize_register', 'innova_customize_register', 1);
 
 function mcs_social($wp_customize){
 
@@ -292,7 +292,7 @@ function mcs_social($wp_customize){
 }
 
 //add
-add_action( 'customize_register', 'mcs_social' );
+// add_action( 'customize_register', 'mcs_social' );
 
 
 // AVANDA
@@ -339,6 +339,7 @@ function avadanta_sections_settings( $wp_customize ){
                 'description' => __('Drag and Drop to Reorder', 'avadanta'). '<img class="avadanta-drag-spinner" src="'.admin_url('/images/spinner.gif').'">',
 
     ) );
+
 
 
     $wp_customize->add_panel( 'home_section_settings', array(
