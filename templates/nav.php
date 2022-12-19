@@ -21,7 +21,7 @@ if($style){
 
 
          <a class="navbar-brand" href="<?php echo home_url();?>">
-          <img src="<?php echo INNOVA_IMG_URL;?>logo.jpg" alt="Logo" width="190" height="54" class="d-inline-block align-text-top">
+          <?php  innova_custom_logo();?>
 
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
