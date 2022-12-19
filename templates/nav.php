@@ -16,7 +16,7 @@ if($style){
   ) ;
 
 ?>
-    <nav class="navbar navbar-expand-lg bg-light">
+    <nav class="navbar navbar-expand-lg ">
       <div class="container"> <!-- container-fluid == full !-->
 
 
