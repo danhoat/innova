@@ -50,6 +50,9 @@ Use it to make something cool, have fun, and share what you've learned with othe
         margin-left: -15px;
         margin-right: -15px;
     }
+    .welcome .inner {
+        margin-top: 140px;
+    }
 }
 
 .container,
@@ -100,7 +103,6 @@ main{
     padding-top: 90px;
     width: 1070px;
     max-width: 100%;
-    margin: auto;
     padding-bottom: 40px;
 }
 .inner .item .img {
