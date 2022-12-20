@@ -21,7 +21,8 @@ Use it to make something cool, have fun, and share what you've learned with othe
         grid-column-start:1;
         grid-column-end: 3;
     }
-    .top-section-1 h2::after, .top-section-1 h2::before {
+    .top-section-1 h2::after, .top-section-1 h2::before,
+    .home .headingline h2::before {
     content: "";
     height: 9px;
     width: 153px;
@@ -41,10 +42,19 @@ Use it to make something cool, have fun, and share what you've learned with othe
         -webkit-transform: translateY(-7px);
         transform: translateY(-7px);
     }
-    .top-section-1 h2::after {
+    .top-section-1 h2::after,
+    .home .headingline h2::after {
         background: url(images/3.png) no-repeat center;
         margin-right: 0;
         margin-left: 15px;
+        content: '';
+        height: 9px;
+        width: 153px;
+        display: inline-block;
+    }
+    .home .headingline h2::after{
+        position: relative;
+        top:-8px;
     }
     .accordion .card-body {
         margin-left: -15px;
@@ -57,11 +67,14 @@ Use it to make something cool, have fun, and share what you've learned with othe
 
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
+    .search-form{
+        max-width: 200px;
+    }
 }
 
 .container,
 body .container{
-    max-width: 1200px !important;
+    max-width: 1140px !important;
 }
 ul{
     margin: 0;
@@ -267,7 +280,8 @@ section.news{
     position: relative;
     z-index: 11;
 }
-.top-section-1 h2 {
+.top-section-1 h2,
+.home .heading {
     font-family: "Oswald";
     text-transform: uppercase;
     color: #be1515;
@@ -280,6 +294,7 @@ section.news{
 .top-section-1 h2 a {
     color: #205eab;
     display: inline-block;
+    text-decoration: none;
 }
 
 .accordion .header {
@@ -458,7 +473,7 @@ main.archive{
 }
 .banner{
     background: url('images/banner.jpg');
-    height: 450px;
+    height: 415px;
     display: block;
     color: #fff;
     position: relative;
@@ -466,7 +481,7 @@ main.archive{
 }
 .banner .link-page{
     position: absolute;
-    top:35%;
+    top:43%;
     width: 100%;
     text-align: center;
 }

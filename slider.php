@@ -1,9 +1,9 @@
 <?php
 
 global $innova_option;
-$img_1 = $innova_option->image_slider_1;
-$img_2 = $innova_option->image_slider_2;
-$img_3 = $innova_option->image_slider_3;
+$img_1 = $innova_option->image_slider_1.'?v='.rand();
+$img_2 = $innova_option->image_slider_2.'?v='.rand();
+$img_3 = $innova_option->image_slider_3.'?v='.rand();
 $show_label = false;
 ?>
 <div id="carouselExampleDark" class="carousel carousel-dark slide innova-slider" data-bs-ride="carousel">
