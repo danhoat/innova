@@ -268,12 +268,13 @@ section.news{
     z-index: 11;
 }
 .top-section-1 h2 {
-    font-family: "UTMAvo";
+    font-family: "Oswald";
     text-transform: uppercase;
     color: #be1515;
     font-size: 34px;
     margin-bottom: 20px;
     color: #205eab;
+    font-weight: 400;
 }
 
 .top-section-1 h2 a {
