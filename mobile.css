@@ -53,6 +53,7 @@
     }
     .slick-initialized .slick-slide{
         grid-template-columns: 1fr;
+        row-gap: 10px;
     }
     main{
         max-width: 100%;
@@ -80,9 +81,12 @@
 
     }
     .accordion .item-01{
-      
+
     }
     article{
         padding: 0;
+    }
+    body.home .elementor-widget:not(:last-child) {
+        margin-bottom: 10px;
     }
 }

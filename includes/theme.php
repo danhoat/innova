@@ -28,9 +28,9 @@ function get_innova_option(){
 	$default = array(
 		'head_line' 		=> 'Công TY Bắc Nam Trung',
 		'about_us' 			=> '',
-		'image_slider_1' 	=> INNOVA_IMG_URL.'/slider.jpg',
-		'image_slider_2' 	=> INNOVA_IMG_URL.'/slider.jpg',
-		'image_slider_3' 	=> INNOVA_IMG_URL.'/slider.jpg',
+		'image_slider_1' 	=> INNOVA_IMG_URL.'/slider.jpg?v='.rand(),
+		'image_slider_2' 	=> INNOVA_IMG_URL.'/slider.jpg?v='.rand(),
+		'image_slider_3' 	=> INNOVA_IMG_URL.'/slider.jpg?v='.rand(),
 	);
 	$result = wp_parse_args($options, $default);
 	return (object) $result;
