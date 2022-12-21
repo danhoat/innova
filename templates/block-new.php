@@ -56,22 +56,16 @@ if($query->have_posts() ){
           <?php } ?>
         </div>
         <script type="text/javascript">
-            // (function($){
-            //     $( document ).ready(function() {
-                    // const carousel = new bootstrap.Carousel('#newcarouSel');
+
                     var myCarousel = document.querySelector('#newcarouSel')
                     //    item: 4,
                     var carousel = new bootstrap.Carousel(myCarousel, {
                         interval: 2000,
                         wrap: false,
-                        item: 3
+                        item: 1
                     });
                     console.log("carousel: ", carousel);
 
-            //     });
-            //     console.log('ready');
-
-            // });
         </script>
       </div>
 </section>

@@ -20,6 +20,9 @@ $innova_option = get_innova_option();
     <?php  get_template_part('templates/block','new'); ?>
 
     <?php
+
+    //echo do_shortcode('[video_slider]');
+
     if ( have_posts() ) {
 
         // Load posts loop.

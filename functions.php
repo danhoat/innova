@@ -20,7 +20,13 @@ define('INNOVA_THEME_DIR',get_template_directory() );
 
 require (  INNOVA_THEME_DIR.'/html.php');
 require ( INNOVA_THEME_DIR.'/includes/theme.php');
+require ( INNOVA_THEME_DIR.'/includes/shortcodes.php');
 require ( INNOVA_THEME_DIR . '/customizer/innova-customizer.php' );
+
+add_action('init','load_hook_elementor', 999);
+function load_hook_elementor(){
+    require(INNOVA_THEME_DIR.'/elementor/elementor-list-widget.php');
+}
 
 
 Class Inova_Theme{
