@@ -70,6 +70,9 @@ Use it to make something cool, have fun, and share what you've learned with othe
     .search-form{
         max-width: 200px;
     }
+    .archive .article-excerpt  img{
+        max-height: 230px;
+    }
 }
 
 .container,
@@ -468,7 +471,7 @@ section.news{
 .single main,
 .search main,
 main.archive{
-    max-width: 1180px;
+    max-width: 1140px;
     margin: 0 auto;
 }
 .banner{
@@ -575,6 +578,10 @@ footer .contact-f img{
 .news .carousel-item img{
     max-width: 100%;
     height: auto;
+}
+.news .item-caption{
+    padding-top: 10px;
+
 }
 article.col-post{
     background: #9393931c;

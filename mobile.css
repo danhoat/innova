@@ -2,7 +2,10 @@
     .innova-slider img{
         height: auto;
     }
-
+    article.col-post{
+        background: none;
+    }
+    
     .navbar-toggler-icon {
         background-image: url('images/toogle-icon.svg')
     }
