@@ -526,6 +526,13 @@ article{
     padding: 10px;
     overflow: hidden;
 }
+body.single article,
+body.page  article{
+    padding: 0;
+}
+main.archive{
+    padding: 10px;
+}
 article img:hover{
 
     1-webkit-transform: scale(1.05);
@@ -709,4 +716,7 @@ body div.wpforms-container-full .wpforms-form textarea.wpforms-field-large{
 }
 .page-id-16 h6{
     font-size: 15px;
+}
+body.single .elementor-column-gap-default>.elementor-column>.elementor-element-populated{
+    padding: 0;
 }

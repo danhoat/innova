@@ -16,7 +16,7 @@
         //echo '</div>';
 
     } else {
-        echo 'No post found.';
+        echo 'Chưa có bài viết.';
     }
     ?>
 </main>
