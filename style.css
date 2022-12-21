@@ -573,7 +573,7 @@ footer .contact-f img{
 .archive main, main.archive{
     display: grid;
     grid-template-columns:  1fr 1fr 1fr;
-    grid-column-gap: 30px;
+    grid-column-gap: 20px;
     grid-row-gap: 15px;
 }
 .news .carousel-item img{
