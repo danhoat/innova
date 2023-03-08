@@ -477,7 +477,7 @@ main.archive{
 }
 .banner{
     background: url('images/banner.jpg');
-    height: 415px;
+    height: 315px;
     display: block;
     color: #fff;
     position: relative;
@@ -719,4 +719,9 @@ body div.wpforms-container-full .wpforms-form textarea.wpforms-field-large{
 }
 body.single .elementor-column-gap-default>.elementor-column>.elementor-element-populated{
     padding: 0;
+}
+section.description{
+    max-width: 1130px;
+    margin: 0 auto;
+    padding: 15px 0 25px 0;
 }

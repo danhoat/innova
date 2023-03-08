@@ -9,6 +9,7 @@ $categories = get_terms('danh-muc', array(
     'hide_empty'    => false,
     'fields'        => 'all',
     'exclude'       => 1,
+    //'orderby' => 'term_id',
 ));
 
 ?>

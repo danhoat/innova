@@ -2,6 +2,11 @@
 
 
 <?php get_template_part('templates/breadcrumb');?>
+<?php if(is_tax() ){ ?>
+    <section class="description">
+        <?php echo term_description();?>
+    </section>
+<?php }?>
 
 <main role="main" >
 
